@@ -1,26 +1,20 @@
+원본
+
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <!-- 구글 애드센스 심사용 자동 광고 스크립트 -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7903435708794735" crossorigin="anonymous"></script>
-    
     <meta charset="UTF-8">
-    <!-- 구글 애드센스 소유권 확인 코드 -->
     <meta name="google-adsense-account" content="ca-pub-7903435708794735">
-    <!-- 네이버 웹마스터도구 사이트 소유 확인 코드 -->
     <meta name="naver-site-verification" content="47b6c03d49cde397ff30aa0e1364c646e0222e5a" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gaffodil</title>
-    
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome 아이콘 팩 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts (Noto Sans KR) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    
     <style>
         body {
             font-family: 'Noto Sans KR', sans-serif;
@@ -29,52 +23,43 @@
 </head>
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
 
-    <!-- [상단 헤더 & 네비게이션 메뉴] -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
-            <!-- 로고 영역 -->
             <a href="#" onclick="showPage('home')" class="text-2xl font-extrabold text-blue-600 tracking-tight flex items-center gap-2">
                 <i class="fa-solid fa-book-open"></i> Tech&Life <span class="text-gray-500 text-sm font-normal">정보 블로그</span>
             </a>
             
-            <!-- 상단 네비게이션 버튼 -->
             <nav class="flex flex-wrap justify-center gap-1 md:gap-2">
                 <button onclick="showPage('home')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-blue-600 bg-blue-50 transition">홈</button>
-                <button onclick="filterCategory('finance')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">금융/재테크</button>
+                <button onclick="filterCategory('tech')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">IT/테크</button>
                 <button onclick="filterCategory('life')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">생활정보</button>
-                <button onclick="filterCategory('finance')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">다이어트</button>
+                <button onclick="filterCategory('finance')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">금융/재테크</button>
                 <button onclick="showPage('about')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">블로그 소개</button>
                 <button onclick="showPage('privacy')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">개인정보처리방침</button>
             </nav>
         </div>
     </header>
 
-    <!-- [상단 광고 슬롯] 가로형 카카오 애드핏 광고 영역 -->
     <div class="max-w-6xl mx-auto w-full px-4 mt-6">
         <div class="bg-gray-100 border border-dashed border-gray-300 rounded-lg p-4 text-center">
             <span class="text-xs text-gray-400 block mb-1">ADVERTISEMENT</span>
             <div class="flex flex-col items-center justify-center">
-                <!-- 상단 애드핏 (320x100) -->
                 <ins class="kakao_ad_area" style="display:none;"
                     data-ad-unit = "DAN-FkPNnJnYvpHfHGjF"
                     data-ad-width = "320"
                     data-ad-height = "100"></ins>
                 <script type="text/javascript" src="//t1.kakaocdn.net/kas/static/ba.min.js" async></script>
-                <span class="text-gray-400 text-xs font-medium mt-1">상단 가로형 광고</span>
+                <span class="text-gray-400 text-xs font-medium mt-1">상단 추천 광고 영역</span>
             </div>
         </div>
     </div>
 
-    <!-- [메인 콘텐츠 레이아웃] 좌측: 포스트 내용 및 목록 / 우측: 사이드바 -->
     <main class="max-w-6xl mx-auto w-full px-4 py-8 flex-grow grid grid-cols-1 lg:grid-cols-3 gap-8">
         
-        <!-- [좌측 영역] -->
         <section class="lg:col-span-2 space-y-8">
             
-            <!-- 1. 메인 화면 (포스트 카드 목록) -->
             <div id="page-home" class="page-content space-y-6">
 
-                <!-- 초보자용 파란색 글쓰기 가이드 안내판 (X 누르면 닫힘) -->
                 <div id="writing-guide" class="bg-blue-600 text-white rounded-2xl p-6 shadow-md border-l-8 border-blue-800 flex flex-col justify-between gap-4 relative">
                     <button onclick="document.getElementById('writing-guide').remove()" class="absolute top-4 right-4 text-white hover:text-blue-200 transition text-lg">
                         <i class="fa-solid fa-xmark"></i>
@@ -82,47 +67,45 @@
                     <div>
                         <span class="bg-blue-800 text-xs px-2 py-1 rounded font-bold uppercase tracking-wider">Editor Guide</span>
                         <h3 class="text-lg font-bold mt-2 flex items-center gap-2">
-                            <i class="fa-solid fa-circle-info"></i> 초보 에디터를 위한 글 작성 안내 가이드
+                            <i class="fa-solid fa-circle-info"></i> 블로그 글(포스팅) 작성 안내 가이드
                         </h3>
                         <p class="text-sm text-blue-100 mt-2 leading-relaxed">
-                            블로그 포스팅 글을 추가/수정하려면 이 파일의 최하단에 있는 <strong class="text-white underline">🟦 [글쓰는 구간]</strong> 주석 박스를 찾아서 수정해 주시면 됩니다.
+                            블로그에 새 글을 올리시려면 지금 열고 계신 <strong class="text-white underline">index.html</strong> 파일 하단의 스크립트 영역에서 작업하셔야 합니다.
                         </p>
+                        <div class="bg-blue-700/50 rounded-xl p-3 mt-3 text-xs font-mono text-blue-100 space-y-1">
+                            <p>1. 이 파일 맨 밑으로 스크롤을 내리세요.</p>
+                            <p>2. <span class="text-yellow-300 font-bold">"🟦 [글쓰는 구간 / DATA START] 🟦"</span> 주석 구역을 찾으세요.</p>
+                            <p>3. 양식에 맞추어 데이터를 추가하면 블로그에 글이 즉각 등록됩니다!</p>
+                        </div>
                     </div>
                 </div>
 
                 <h2 id="category-title" class="text-xl font-bold text-gray-900 border-l-4 border-blue-600 pl-3">최신 정보 포스트</h2>
                 
-                <!-- 화면에 포스트 목록을 언제나 2개씩 노출시키는 2열 배치 그리드 -->
                 <div id="posts-container" class="grid grid-cols-2 gap-4 md:gap-6">
-                    <!-- JavaScript를 통해 동적으로 카드가 2개씩 그려집니다 -->
-                </div>
+                    </div>
             </div>
 
-            <!-- 2. 글 상세보기 화면 -->
             <div id="page-detail" class="page-content hidden bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100">
-                <button onclick="showPage('home')" class="text-sm text-blue-600 hover:underline mb-6 inline-flex items-center gap-1 font-medium">
+                <button onclick="showPage('home')" class="text-sm text-blue-600 hover:underline mb-4 inline-flex items-center gap-1">
                     <i class="fa-solid fa-arrow-left"></i> 목록으로 돌아가기
                 </button>
                 <div id="post-detail-content">
-                    <!-- JavaScript를 통해 동적으로 본문 내용이 채워집니다 -->
-                </div>
+                    </div>
 
-                <!-- [본문 맨 하단 광고 슬롯] 기사가 끝난 뒤 나오는 광고 위치 -->
-                <div class="mt-10 bg-gray-50 border border-dashed border-gray-300 rounded-xl p-4 text-center">
+                <div class="my-8 bg-gray-100 border border-dashed border-gray-300 rounded-lg p-4 text-center">
                     <span class="text-xs text-gray-400 block mb-1">ADVERTISEMENT</span>
                     <div class="flex flex-col items-center justify-center">
-                        <!-- 본문 하단 애드핏 (300x250) -->
                         <ins class="kakao_ad_area" style="display:none;"
                             data-ad-unit = "DAN-n7FG9S9Ns4MwP5Ku"
                             data-ad-width = "300"
                             data-ad-height = "250"></ins>
                         <script type="text/javascript" src="//t1.kakaocdn.net/kas/static/ba.min.js" async></script>
-                        <span class="text-gray-400 text-xs font-medium mt-1">본문 하단 추천 광고</span>
+                        <span class="text-gray-400 text-xs font-medium mt-1">본문 하단 추천 광고 영역</span>
                     </div>
                 </div>
             </div>
 
-            <!-- 3. 블로그 소개 페이지 -->
             <div id="page-about" class="page-content hidden bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100">
                 <h2 class="text-2xl font-bold text-gray-900 mb-6 border-b pb-3">Tech&Life 블로그를 소개합니다</h2>
                 <div class="prose max-w-none text-gray-600 leading-relaxed space-y-4">
@@ -132,31 +115,34 @@
                     
                     <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">블로그 운영 원칙</h3>
                     <ul class="list-disc pl-5 space-y-2">
-                        <li><strong>정확성:</strong> 검증되지 않은 정보는 수집 및 발행하지 않습니다.</li>
-                        <li><strong>가독성:</strong> 모바일 및 다양한 기기 환경에서 최적화된 글자 레이아웃을 추구합니다.</li>
-                        <li><strong>유용성:</strong> 실생활에 바로 적용 가능한 해결 지향적 팁을 담습니다.</li>
+                        <li><strong>정확성:</strong> 검증되지 않은 찌라시성 정보는 다루지 않습니다.</li>
+                        <li><strong>가독성:</strong> 모바일에서도 한눈에 읽기 편한 구성을 지향합니다.</li>
+                        <li><strong>유용성:</strong> 읽고 나서 바로 삶에 적용할 수 있는 실용적 팁을 담습니다.</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- 4. 개인정보처리방침 페이지 (애드센스 승인을 위한 필수 규정집) -->
             <div id="page-privacy" class="page-content hidden bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100">
                 <h2 class="text-2xl font-bold text-gray-900 mb-6 border-b pb-3">개인정보처리방침 (Privacy Policy)</h2>
                 <div class="prose max-w-none text-gray-600 text-sm leading-relaxed space-y-4">
-                    <p>본 블로그(Tech&Life, 이하 "회사" 또는 "블로그")는 방문자의 개인정보를 중요시하며, "개인정보보호법" 및 관련 법률을 철저히 준수하고 있습니다.</p>
+                    <p>본 블로그(Tech&Life, 이하 "회사" 또는 "블로그")는 방문자의 개인정보를 중요시하며, "개인정보보호법" 및 "정보통신망 이용촉진 및 정보보호 등에 관한 법률"을 준수하고 있습니다.</p>
+                    
                     <h3 class="text-base font-bold text-gray-800 mt-4">1. 수집하는 개인정보 항목 및 수집방법</h3>
-                    <p>블로그는 사용자가 직접 코멘트나 메일로 문의사항을 전달하는 경우 외에는 민감한 식별 정보를 일체 직접 수집하지 않습니다. 자동 수집되는 브라우저 데이터는 사용 환경 분석 및 개선을 위한 자료로만 이용됩니다.</p>
+                    <p>블로그는 사용자가 직접 문의를 보내거나 댓글을 작성할 때 이외에는 별도의 개인식별정보를 직접 수집하지 않습니다. 단, 서비스 이용 과정에서 IP 주소, 쿠키, 방문 일시, 서비스 이용 기록 등이 자동 생성되어 수집될 수 있습니다.</p>
+                    
                     <h3 class="text-base font-bold text-gray-800 mt-4">2. 쿠키(Cookie) 및 제3자 광고 시스템 (구글 애드센스 등)</h3>
-                    <p>본 블로그는 제3자 광고대행 서비스인 구글(Google AdSense) 및 카카오(Kakao AdFit)를 활용하여 사이트 내에 유용한 맞춤형 배너를 노출시키고 있으며, 이때 브라우저의 사용 패턴 추적용 비식별성 쿠키를 이용할 수 있습니다. 방문자는 브라우저 설정 혹은 구글 광고 가이드라인을 통하여 개인맞춤형 수집 동의 여부를 언제든지 조절할 수 있습니다.</p>
+                    <p>본 블로그는 광고 게재를 위해 구글(Google)을 포함한 제3자 광고 업체의 서비스(Google AdSense)를 이용하고 있습니다. 구글은 쿠키를 사용하여 사용자의 본 사이트 및 다른 사이트 방문 기록을 바탕으로 맞춤형 광고를 제공합니다.</p>
+                    <p>방문자는 구글의 <a href="https://policies.google.com/technologies/ads" target="_blank" class="text-blue-600 underline">광고 설정</a> 페이지를 방문하여 맞춤형 광고 게재를 중단할 수 있습니다.</p>
+                    
+                    <h3 class="text-base font-bold text-gray-800 mt-4">3. 개인정보 처리방침의 변경</h3>
+                    <p>본 방침은 시행일로부터 적용되며, 법령 및 방침에 따른 변경내용의 추가, 삭제 및 정정이 있을 시에는 변경사항을 지체 없이 본 페이지를 통해 공지할 것입니다.</p>
                 </div>
             </div>
 
         </section>
 
-        <!-- [우측 영역: 사이드바] -->
         <aside class="space-y-6">
             
-            <!-- 블로그 프로필 명함 -->
             <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
                 <div class="flex items-center gap-4 mb-4">
                     <div class="w-14 h-14 bg-gradient-to-tr from-blue-500 to-indigo-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
@@ -168,55 +154,50 @@
                     </div>
                 </div>
                 <p class="text-sm text-gray-600 leading-relaxed">
-                    생활에 유익한 전문적인 지식과 유용한 꿀팁 정보를 쉽고 정확하게 전달해 드립니다.
+                    生活에 유익한 전문적인 지식과 최신 정보를 쉽고 정확하게 전달해 드립니다. 궁금한 사항은 언제든 문의해 주세요.
                 </p>
             </div>
 
-            <!-- 사이드바 광고 구역 (300x250) -->
             <div class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 text-center">
                 <span class="text-[10px] text-gray-400 block mb-2">ADVERTISEMENT</span>
                 <div class="bg-gray-50 border border-dashed border-gray-300 rounded-lg min-h-64 flex flex-col items-center justify-center p-2">
-                    <!-- 우측 사이드바 카카오 애드핏 (300x250) -->
                     <ins class="kakao_ad_area" style="display:none;"
                         data-ad-unit = "DAN-NiHRZWuxaxoYJkAR"
                         data-ad-width = "300"
                         data-ad-height = "250"></ins>
                     <script type="text/javascript" src="//t1.kakaocdn.net/kas/static/ba.min.js" async></script>
-                    <span class="text-[10px] text-gray-400 mt-2">우측 사이드바 광고</span>
+                    <span class="text-[10px] text-gray-400 mt-2">우측 사이드바 광고 영역</span>
                 </div>
             </div>
 
-            <!-- 카테고리 바로가기 -->
             <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
                 <h3 class="font-bold text-gray-900 text-base mb-4 border-l-3 border-blue-600 pl-2">카테고리 정보</h3>
                 <div class="space-y-2">
                     <button onclick="filterCategory('tech')" class="w-full flex justify-between items-center text-sm text-gray-600 hover:text-blue-600 py-1.5 border-b border-gray-50 text-left">
-                        <span><i class="fa-solid fa-laptop-code text-blue-500 mr-2"></i> IT</span>
-                        <span class="bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full text-[10px] font-semibold">1</span>
+                        <span><i class="fa-solid fa-laptop-code text-blue-500 mr-2"></i> IT/테크 정보</span>
+                        <span class="bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full text-[10px] font-semibold">2</span>
                     </button>
                     <button onclick="filterCategory('life')" class="w-full flex justify-between items-center text-sm text-gray-600 hover:text-blue-600 py-1.5 border-b border-gray-50 text-left">
-                        <span><i class="fa-solid fa-heart text-red-400 mr-2"></i> 생활정보</span>
-                        <span class="bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full text-[10px] font-semibold">1</span>
+                        <span><i class="fa-solid fa-heart text-red-400 mr-2"></i> 생활의 지혜 / 꿀팁</span>
+                        <span class="bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full text-[10px] font-semibold">2</span>
                     </button>
                     <button onclick="filterCategory('finance')" class="w-full flex justify-between items-center text-sm text-gray-600 hover:text-blue-600 py-1.5 border-b border-gray-50 text-left">
-                        <span><i class="fa-solid fa-coins text-yellow-500 mr-2"></i> 금융/재테크</span>
-                        <span class="bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full text-[10px] font-semibold">0</span>
+                        <span><i class="fa-solid fa-coins text-yellow-500 mr-2"></i> 금융 및 재테크</span>
+                        <span class="bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full text-[10px] font-semibold">2</span>
                     </button>
                 </div>
             </div>
 
-            <!-- 블로그 하단 공지란 -->
             <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
                 <h3 class="font-bold text-gray-900 text-base mb-3 border-l-3 border-blue-600 pl-2">공지사항</h3>
                 <p class="text-xs text-gray-500 leading-relaxed">
-                    본 블로그는 지속적인 정보 업데이트를 지향합니다. 유용한 정보가 주기적으로 업로드되니 북마크(Ctrl+D)해 주시고 자주 방문해 주세요!
+                    본 블로그는 지속적인 정보 업데이트를 지향합니다. 유용한 정보가 매주 업로드되니 북마크(Ctrl+D)하여 자주 방문해 주세요!
                 </p>
             </div>
 
         </aside>
     </main>
 
-    <!-- [하단 푸터 정보] -->
     <footer class="bg-gray-900 text-gray-400 py-10 mt-12 border-t border-gray-800">
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
@@ -239,21 +220,21 @@
         </div>
     </footer>
 
-    <!-- 알림 시스템용 모달창 (클립보드 저장 알림 등) -->
     <div id="toast" class="fixed bottom-5 right-5 bg-gray-900 text-white text-xs px-4 py-3 rounded-xl shadow-lg transition-transform translate-y-20 opacity-0 pointer-events-none z-50">
-        성공적으로 완료되었습니다.
+        성공적으로 처리되었습니다.
     </div>
 
-    <!-- [블로그 메인 구동 브레인: 자바스크립트] -->
     <script>
+        
         // =================================================================================
         // 🟦🟦🟦 [글쓰는 구간 / DATA START] 🟦🟦🟦
-        // 🔵 새로운 글을 등록하거나 기존 글을 편집할 때는 이 구역 안에서 작업해주시면 됩니다!
-        // 🔵 새 글 양식을 복사하여 쉼표(,)로 구분한 후 추가해 주세요.
+        // 🔵 새로운 글을 등록하거나 수정할 때는 이 구역 안에서 작성해주시면 됩니다!
+        // 🔵 쉼표(,)로 구분하여 템플릿 항목들을 추가하고 내용을 적어 넣으세요.
         // =================================================================================
+
         const blogPosts = [
             {
-               
+
     id: 1, 
     category: "life", 
     categoryKo: "생활정보", 
@@ -1184,154 +1165,83 @@
 
         <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">💡 무릎 수술 피하는 일상 속 뼈 건강 관리법</h3>
         <p class="mb-4 text-gray-700 leading-relaxed">아무리 좋은 음식과 영양제를 챙겨 먹어도 무릎에 무리를 주는 습관을 버리지 못하면 밑 빠진 독에 물 붓기입니다. 쪼그려 앉기, 양반다리는 연골을 짓누르는 최악의 자세이므로 반드시 피하셔야 합니다. 체중이 1kg 늘어날 때마다 무릎이 받는 하중은 4배 이상 증가하므로 <b>적정 체중 유지</b>는 필수적이며, 무릎 주변 근육을 강화해 주는 수중 걷기나 실내 자전거 타기 같은 <b>관절에 좋은 운동</b>을 병행해야 평생 내 무릎으로 통증 없이 걸을 수 있습니다.</p>
-            }
-        ];
+    `
+},
+        ]
+
         // =================================================================================
-        // 🟦🟦🟦 [DATA END] 🟦🟦🟦
+        // 🟦🟦🟦 [글쓰는 구간 / DATA END] 🟦🟦🟦
+        // 🔵 이 선 아랫부분은 건드리지 않으셔도 괜찮습니다.
         // =================================================================================
 
 
-        // 페이지 네비게이션 엔진
-        function showPage(pageId) {
-            // 모든 페이지 요소를 감춤
+       function showPage(pageId) {
             document.querySelectorAll('.page-content').forEach(p => p.classList.add('hidden'));
-
-            // 메뉴 활성화 하이라이트 초기화
-            const navButtons = document.querySelectorAll('.nav-btn');
-            navButtons.forEach(btn => {
-                btn.classList.remove('text-blue-600', 'bg-blue-50');
-                btn.classList.add('text-gray-600', 'hover:bg-gray-100');
-            });
-
-            // 지정된 페이지만 활성화
-            const targetPage = document.getElementById(`page-${pageId}`);
-            if (targetPage) {
+            const targetPage = document.getElementById('page-' + pageId);
+            if(targetPage) {
                 targetPage.classList.remove('hidden');
-                
-                // 클릭한 메뉴 버튼에 테두리와 색상 하이라이트 부여
-                if (pageId === 'home') {
-                    navButtons[0].classList.add('text-blue-600', 'bg-blue-50');
-                    navButtons[0].classList.remove('text-gray-600', 'hover:bg-gray-100');
-                    renderPosts(blogPosts); // 홈 화면 로드 시 전체 리스트업
-                    document.getElementById('category-title').innerText = "최신 정보 포스트";
-                } else if (pageId === 'about') {
-                    navButtons[4].classList.add('text-blue-600', 'bg-blue-50');
-                    navButtons[4].classList.remove('text-gray-600', 'hover:bg-gray-100');
-                } else if (pageId === 'privacy') {
-                    navButtons[5].classList.add('text-blue-600', 'bg-blue-50');
-                    navButtons[5].classList.remove('text-gray-600', 'hover:bg-gray-100');
-                }
             }
-            // 페이지 최상단으로 자동 부드러운 스크롤 이동
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo(0,0);
         }
 
-        // 카테고리 필터링 기능
+        // 카테고리 필터링 기능 (동적 구현용 설계 기본값)
         function filterCategory(category) {
             showPage('home');
-            
-            const navButtons = document.querySelectorAll('.nav-btn');
-            navButtons.forEach(btn => {
-                btn.classList.remove('text-blue-600', 'bg-blue-50');
-                btn.classList.add('text-gray-600', 'hover:bg-gray-100');
-            });
-
-            let btnIndex = 1;
-            if (category === 'tech') btnIndex = 1;
-            else if (category === 'life') btnIndex = 2;
-            else if (category === 'finance') btnIndex = 3;
-
-            navButtons[btnIndex].classList.add('text-blue-600', 'bg-blue-50');
-            navButtons[btnIndex].classList.remove('text-gray-600', 'hover:bg-gray-100');
-
-            const filtered = blogPosts.filter(post => post.category === category);
-            
-            let catName = "IT/테크";
-            if (category === "life") catName = "생활정보";
-            if (category === "finance") catName = "금융/재테크";
-
-            document.getElementById('category-title').innerText = `"${catName}" 정보 목록`;
-            renderPosts(filtered);
+            const titleEl = document.getElementById('category-title');
+            if(category === 'tech') titleEl.innerText = "IT/테크 정보 포스트";
+            if(category === 'life') titleEl.innerText = "생활의 지혜 / 꿀팁 포스트";
+            if(category === 'finance') titleEl.innerText = "금융 및 재테크 포스트";
         }
 
-        // 메인 카드 목록 2열 출력 함수
-        function renderPosts(posts) {
+        // 포스트 목록 초기 동적 출력 처리
+        function renderPosts() {
             const container = document.getElementById('posts-container');
             if(!container) return;
-            container.innerHTML = '';
-
-            if (!posts || posts.length === 0) {
-                container.innerHTML = '<div class="col-span-2 text-center text-gray-500 py-12">작성된 글이 아직 없습니다.</div>';
-                return;
-            }
-
-            posts.forEach(post => {
-                const card = document.createElement('div');
-                card.className = "bg-white rounded-xl p-4 md:p-5 shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition duration-200 cursor-pointer flex flex-col justify-between";
-                card.onclick = () => showPostDetail(post.id);
-
-                let badgeColor = "bg-blue-50 text-blue-600";
-                if (post.category === 'life') badgeColor = "bg-emerald-50 text-emerald-600";
-                if (post.category === 'finance') badgeColor = "bg-amber-50 text-amber-600";
-
-                card.innerHTML = `
-                    <div>
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="${badgeColor} px-2 py-0.5 rounded text-[11px] font-semibold">${post.categoryKo}</span>
-                            <span class="text-[11px] text-gray-400">${post.date}</span>
+            container.innerHTML = "";
+            
+            blogPosts.forEach(post => {
+                container.innerHTML += `
+                    <div onclick="viewDetail(${post.id})" class="bg-white rounded-xl p-4 md:p-5 shadow-sm border border-gray-100 hover:shadow-md transition cursor-pointer flex flex-col justify-between">
+                        <div>
+                            <span class="text-[11px] font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded">${post.categoryKo}</span>
+                            <h3 class="font-bold text-gray-900 text-sm md:text-base mt-2 line-clamp-2">${post.title}</h3>
+                            <p class="text-xs text-gray-500 mt-1.5 line-clamp-2">${post.summary}</p>
                         </div>
-                        <h3 class="text-sm md:text-base font-bold text-gray-900 mb-1.5 hover:text-blue-600 transition leading-snug line-clamp-2">${post.title}</h3>
-                        <p class="text-xs text-gray-500 mb-3 line-clamp-2 leading-relaxed">${post.summary}</p>
-                    </div>
-                    <div class="flex items-center justify-between text-[11px] text-gray-400 border-t pt-2 mt-2">
-                        <span><i class="fa-regular fa-user mr-1"></i> ${post.author}</span>
-                        <span><i class="fa-regular fa-clock mr-1"></i> ${post.readTime}</span>
+                        <div class="text-[11px] text-gray-400 mt-4 flex justify-between items-center border-t pt-2">
+                            <span>${post.date}</span>
+                            <span>${post.readTime}</span>
+                        </div>
                     </div>
                 `;
-                container.appendChild(card);
             });
         }
 
-        // 특정 글 상세 보기 구현
-        function showPostDetail(postId) {
-            const post = blogPosts.find(p => p.id === postId);
-            if (!post) return;
-
-            document.querySelectorAll('.page-content').forEach(p => p.classList.add('hidden'));
-
-            const detailPage = document.getElementById('page-detail');
-            detailPage.classList.remove('hidden');
-
-            const contentContainer = document.getElementById('post-detail-content');
+        // 상세페이지 렌더링
+        function viewDetail(id) {
+            const post = blogPosts.find(p => p.id === id);
+            if(!post) return;
             
-            let badgeColor = "bg-blue-50 text-blue-600";
-            if (post.category === 'life') badgeColor = "bg-emerald-50 text-emerald-600";
-            if (post.category === 'finance') badgeColor = "bg-amber-50 text-amber-600";
-
-            contentContainer.innerHTML = `
-                <div class="flex items-center gap-2 mb-3">
-                    <span class="${badgeColor} px-2 py-0.5 rounded text-xs font-bold">${post.categoryKo}</span>
-                    <span class="text-xs text-gray-400">${post.date}</span>
+            const detailContainer = document.getElementById('post-detail-content');
+            detailContainer.innerHTML = `
+                <div class="mb-4">
+                    <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded">${post.categoryKo}</span>
                 </div>
-                <h1 class="text-xl md:text-2xl font-extrabold text-gray-900 mb-3 leading-tight">${post.title}</h1>
-                
-                <div class="flex items-center gap-4 text-xs text-gray-500 border-b pb-4 mb-6">
-                    <span class="flex items-center gap-1"><i class="fa-regular fa-user"></i> 작성자: <b>${post.author}</b></span>
-                    <span class="flex items-center gap-1"><i class="fa-regular fa-clock"></i> ${post.readTime}</span>
+                <h1 class="text-xl md:text-3xl font-extrabold text-gray-900 mb-3 leading-tight">${post.title}</h1>
+                <div class="flex gap-3 text-xs text-gray-400 border-b pb-4 mb-6">
+                    <span>작성자: ${post.author}</span>
+                    <span>|</span>
+                    <span>날짜: ${post.date}</span>
                 </div>
-
-                <!-- 기사 전문 본문 내용 -->
-                <div class="prose max-w-none text-sm md:text-base text-gray-800 leading-relaxed space-y-4">
+                <div class="prose max-w-none text-sm md:text-base">
                     ${post.content}
                 </div>
             `;
-
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            showPage('detail');
         }
 
-        // 시작 시 초기 실행
+        // 실행
         window.onload = function() {
-            renderPosts(blogPosts);
+            renderPosts();
         };
     </script>
 </body>
