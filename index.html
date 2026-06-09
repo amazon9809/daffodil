@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
+<head>   
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7903435708794735" crossorigin="anonymous"></script>
+
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -8,7 +10,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-5N4CRMMZ');</script>
 <!-- End Google Tag Manager -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7903435708794735" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="google-adsense-account" content="ca-pub-7903435708794735">
     <meta name="naver-site-verification" content="47b6c03d49cde397ff30aa0e1364c646e0222e5a" />
@@ -159,15 +160,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <h3 class="font-bold text-gray-900 text-base mb-4 border-l-3 border-blue-600 pl-2">카테고리 정보</h3>
                 <div class="space-y-2">
                     <button onclick="filterCategory('tech')" class="w-full flex justify-between items-center text-sm text-gray-600 hover:text-blue-600 py-1.5 border-b border-gray-50 text-left">
-                        <span><i class="fa-solid fa-laptop-code text-blue-500 mr-2"></i> IT정보</span>
+                        <span><i class="fa-solid fa-laptop-code text-blue-500 mr-2"></i> 생활정보</span>
                         <span class="bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full text-[10px] font-semibold">2</span>
                     </button>
                     <button onclick="filterCategory('life')" class="w-full flex justify-between items-center text-sm text-gray-600 hover:text-blue-600 py-1.5 border-b border-gray-50 text-left">
-                        <span><i class="fa-solid fa-heart text-red-400 mr-2"></i> 생활정보</span>
+                        <span><i class="fa-solid fa-heart text-red-400 mr-2"></i> 건강정보</span>
                         <span class="bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full text-[10px] font-semibold">2</span>
                     </button>
                     <button onclick="filterCategory('finance')" class="w-full flex justify-between items-center text-sm text-gray-600 hover:text-blue-600 py-1.5 border-b border-gray-50 text-left">
-                        <span><i class="fa-solid fa-coins text-yellow-500 mr-2"></i> 금융 및 재테크</span>
+                        <span><i class="fa-solid fa-coins text-yellow-500 mr-2"></i> 경제정보</span>
                         <span class="bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full text-[10px] font-semibold">2</span>
                     </button>
                 </div>
@@ -1552,9 +1553,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         function filterCategory(category) {
             showPage('home');
             const titleEl = document.getElementById('category-title');
-            if(category === 'tech') titleEl.innerText = "IT/테크 정보 ";
-            if(category === 'life') titleEl.innerText = "생활의 wjdqh ";
-            if(category === 'finance') titleEl.innerText = "재테크 ";
+            if(category === 'tech') titleEl.innerText = "생활정보 ";
+            if(category === 'life') titleEl.innerText = "건강정보";
+            if(category === 'finance') titleEl.innerText = "경제정보 ";
         }
 
         // 포스트 목록 초기 동적 출력 처리
