@@ -1653,6 +1653,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ul>
         <p class="mb-4 text-gray-700 leading-relaxed">※ 미성년 자녀의 경우 주민등록상 세대주가 함께 신청할 수 있습니다. 본인의 건강보험료 자격 조회가 필요할 경우 국민건강보험공단 홈페이지나 'The건강보험' 앱에서 미리 확인하시는 것을 추천합니다.</p>
     `
+},
+            {
+    id: 36,
+    category: "tech",
+    categoryKo: "기술·IT",
+    title: "구글·네이버에 내 웹사이트 노출하는 웹마스터 도구 등록 방법",
+    summary: "공들여 만든 웹사이트나 블로그가 검색 결과에 나오지 않아 고민이신가요? 구글 서치 콘솔과 네이버 서치어드바이저를 이용해 사이트를 검색 엔진에 노출시키는 필수 검색엔진최적화(SEO) 단계를 정리했습니다.",
+    date: "2026-06-10",
+    author: "테크 에디터",
+    readTime: "4분 소요",
+    content: `
+        <p class="mb-4 text-gray-700 leading-relaxed">웹사이트를 새로 제작한 후 가만히 기다리기만 하면 검색 엔진(구글, 네이버 등)이 내 사이트를 발견하는 데 오랜 시간이 걸리거나, 아예 노출되지 않을 수 있습니다. 검색 로봇이 내 사이트를 찾아와 글을 긁어가도록(크롤링) 직접 신고하는 과정인 '웹마스터 도구 등록'이 필수적입니다.</p>
+        
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">1. 구글 노출의 첫걸음: Google Search Console 등록</h3>
+        <p class="mb-4 text-gray-700 leading-relaxed">전 세계 및 국내 유입의 핵심인 구글에 노출하려면 '구글 서치 콘솔' 등록이 가장 먼저 선행되어야 합니다.</p>
+        <ul class="list-disc list-inside mb-4 text-gray-700 leading-relaxed pl-2">
+            <li class="mb-1"><strong>사이트 접속 및 로그인:</strong> 구글 서치 콘솔(Google Search Console)에 접속하여 구글 계정으로 로그인합니다.</li>
+            <li class="mb-1"><strong>속성 추가:</strong> '속성 유형 선택' 화면에서 내 웹사이트 주소(URL)를 입력합니다. (URL 접두사 방식이 가장 간편합니다.)</li>
+            <li class="mb-1"><strong>소유권 인증:</strong> 구글이 제공하는 HTML 태그(<code class="bg-gray-100 px-1 rounded text-red-500">&lt;meta name="..."&gt;</code>)를 복사하여, 내 사이트 소스코드의 <code class="bg-gray-100 px-1 rounded text-blue-600">&lt;head&gt;</code> 섹션 안에 붙여넣고 인증을 완료합니다.</li>
+        </ul>
+        
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">2. 국내 포털 노출 필수: 네이버 서치어드바이저 등록</h3>
+        <p class="mb-4 text-gray-700 leading-relaxed">국내 사용자층이 두터운 네이버 노출을 위해서는 '네이버 서치어드바이저'를 이용해야 합니다.</p>
+        <ul class="list-disc list-inside mb-4 text-gray-700 leading-relaxed pl-2">
+            <li class="mb-1"><strong>웹마스터 도구 진입:</strong> 네이버 서치어드바이저 접속 후 로그인하고 '웹마스터 도구' 버튼을 클릭합니다.</li>
+            <li class="mb-1"><strong>사이트 등록 및 인증:</strong> 내 사이트 주소를 입력한 뒤, 구글과 마찬가지로 네이버가 제공하는 메타(Meta) 태그를 복사하여 사이트의 <code class="bg-gray-100 px-1 rounded text-blue-600">&lt;head&gt;</code>에 삽입 후 소유자 확인을 진행합니다.</li>
+        </ul>
+        
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">3. 노출을 앞당기는 핵심 마무릿단계: RSS 및 사이트맵(Sitemap) 제출</h3>
+        <p class="mb-4 text-gray-700 leading-relaxed">인증을 마쳤다면 검색 로봇에게 내 사이트의 지도(구조)를 넘겨주어야 글들이 빠르게 수집됩니다. 각 플랫폼의 '요청/제출' 메뉴를 통해 아래 두 가지를 꼭 등록하세요.</p>
+        
+        <h4 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Sitemap.xml 제출</h4>
+        <p class="mb-4 text-gray-700 leading-relaxed">사이트의 모든 페이지 경로를 모아둔 파일입니다. 보통 사이트 주소 뒤에 <code class="bg-gray-100 px-1 rounded text-sm text-gray-800">/sitemap.xml</code>을 붙여 제출합니다. (예: <code class="text-sm text-gray-600">mysite.com/sitemap.xml</code>)</p>
+        
+        <h4 class="text-lg font-semibold text-gray-800 mt-4 mb-2">RSS 제출</h4>
+        <p class="mb-4 text-gray-700 leading-relaxed">최근에 작성된 글들을 정렬해서 보여주는 피드입니다. 사이트 주소 뒤에 <code class="bg-gray-100 px-1 rounded text-sm text-gray-800">/rss</code> 또는 <code class="bg-gray-100 px-1 rounded text-sm text-gray-800">/feed</code>를 입력하여 제출하면 로봇이 새 글을 더 빨리 인지합니다.</p>
+        
+        <p class="mb-4 text-gray-700 leading-relaxed mt-4">※ 주의: 모든 등록을 마친 후 검색 엔진의 로봇이 사이트를 방문해 실제 검색 결과에 반영하기까지는 <strong>짧게는 2~3일에서 길게는 2주일 정도</strong>의 시간이 소요될 수 있습니다.</p>
+    `
 }
         ];
 
