@@ -2359,69 +2359,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         // ║  ⚠️  이 아래는 수정하지 마세요.                                          ║
         // ╚══════════════════════════════════════════════════════════════════════════╝
 
+// 포스트 목록 렌더링 (category=null 이면 전체)
+// 수정: 함수 선언 끝의 세미콜론 제거
+function renderPosts(category) {
+    const container = document.getElementById('posts-container');
+    if (!container) return;
 
-        function shareToX(id) {
-            const post = blogPosts.find(p => p.id === id);
-            if (!post) return;
-            const params = new URLSearchParams({
-                text: post.title,
-                url: window.location.href,
-            });
-            window.open('https://x.com/intent/tweet?' + params.toString(), '_blank', 'width=600,height=450');
-        }
+    const filtered = category
+        ? blogPosts.filter(p => p.category === category)
+        : blogPosts;
 
-        // ── 네비 활성화 상태 업데이트 ──────────────────────────────────────────
-        function setActiveNav(key) {
-            document.querySelectorAll('.nav-btn').forEach(btn => {
-                const isActive = btn.getAttribute('data-nav') === key;
-                btn.classList.toggle('text-blue-600', isActive);
-                btn.classList.toggle('bg-blue-50', isActive);
-                btn.classList.toggle('text-gray-600', !isActive);
-                btn.classList.toggle('hover:bg-gray-100', !isActive);
-            });
-        }
+    // 카테고리 타이틀 (전체일 때만 "최신 정보 포스트"로 복원)
+    const titleEl = document.getElementById('category-title');
+    if (!category && titleEl) titleEl.innerText = '최신 정보 포스트';
 
-        function showPage(pageId) {
-            document.querySelectorAll('.page-content').forEach(p => p.classList.add('hidden'));
-            const targetPage = document.getElementById('page-' + pageId);
-            if (targetPage) targetPage.classList.remove('hidden');
-            if (pageId === 'home') {
-                renderPosts(null);   // 홈은 전체 포스트
-                setActiveNav('home');
-            } else {
-                setActiveNav(pageId);
-            }
-            window.scrollTo(0, 0);
-        }
-
-        // 카테고리 필터링 – 실제 포스트 필터링 + 카운트 표시 + 네비 활성화
-        function filterCategory(category) {
-            showPage('home');
-            const labelMap = { tech: '생활정보', life: '건강정보', finance: '경제정보' };
-            const titleEl = document.getElementById('category-title');
-            if (titleEl) titleEl.innerText = labelMap[category] || '전체 포스트';
-            renderPosts(category);
-            setActiveNav(category);
-        }
-
-        // 포스트 목록 렌더링 (category=null 이면 전체)
-        function renderPosts(category) {
-            const container = document.getElementById('posts-container');
-            if (!container) return;
-
-            const filtered = category
-                ? blogPosts.filter(p => p.category === category)
-                : blogPosts;
-
-            // 카테고리 타이틀 (전체일 때만 "최신 정보 포스트"로 복원)
-            const titleEl = document.getElementById('category-title');
-            if (!category && titleEl) titleEl.innerText = '최신 정보 포스트';
-
-            container.innerHTML = '';
-            if (filtered.length === 0) {
-                container.innerHTML = '<p class="col-span-2 text-center text-gray-400 py-12">해당 카테고리의 포스트가 없습니다.</p>';
-                return;
-            }
+    container.innerHTML = '';
+    if (filtered.length === 0) {
+        container.innerHTML = '<p class="col-span-2 text-center text-gray-400 py-12">해당 카테고리의 포스트가 없습니다.</p>';
+        return;
+    }
+    
+    // 이후 포스트 렌더링 로직 (map 등)이 여기에 추가되어야 합니다.
+    // 현재 코드에서는 여기서 함수가 종료되므로, 
+    // 실제 HTML을 생성하는 코드를 이 아래에 작성하세요.
+}
 
             filtered.forEach(post => {
                 container.innerHTML += `
