@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head> 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7903435708794735"
-     crossorigin="anonymous"></script>
+<head>   
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7903435708794735" crossorigin="anonymous"></script>
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5N4CRMMZ');</script>
+<!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="google-adsense-account" content="ca-pub-7903435708794735">
     <meta name="naver-site-verification" content="47b6c03d49cde397ff30aa0e1364c646e0222e5a" />
@@ -32,12 +39,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </a>
             
             <nav class="flex flex-wrap justify-center gap-1 md:gap-2">
-                <button onclick="showPage('home')" data-nav="home" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-blue-600 bg-blue-50 transition">홈</button>
-                <button onclick="filterCategory('tech')" data-nav="tech" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">생활정보</button>
-                <button onclick="filterCategory('life')" data-nav="life" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">건강정보</button>
-                <button onclick="filterCategory('finance')" data-nav="finance" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">경제정보</button>
-                <button onclick="showPage('about')" data-nav="about" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">블로그 소개</button>
-                <button onclick="showPage('privacy')" data-nav="privacy" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">개인정보처리방침</button>
+                <button onclick="showPage('home')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-blue-600 bg-blue-50 transition">홈</button>
+                <button onclick="filterCategory('tech')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">생활정보</button>
+                <button onclick="filterCategory('life')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">건강정보</button>
+                <button onclick="filterCategory('finance')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">경제정보</button>
+                <button onclick="showPage('about')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">블로그 소개</button>
+                <button onclick="showPage('privacy')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">개인정보처리방침</button>
             </nav>
         </div>
     </header>
@@ -46,12 +53,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="bg-gray-100 border border-dashed border-gray-300 rounded-lg p-4 text-center">
             <span class="text-xs text-gray-400 block mb-1">ADVERTISEMENT</span>
             <div class="flex flex-col items-center justify-center">
-               <ins class="kakao_ad_area" style="display:none;"
-                    data-ad-unit = "DAN-Zevyq7pc7vT6bJAb"
+                <ins class="kakao_ad_area" style="display:none;"
+                    data-ad-unit = "DAN-FkPNnJnYvpHfHGjF"
                     data-ad-width = "320"
                     data-ad-height = "100"></ins>
-<script type="text/javascript" src="//t1.kakaocdn.net/kas/static/ba.min.js" async></script>
-                <span class="text-gray-400 text-xs font-medium mt-1">건강</span>
+                <script type="text/javascript" src="//t1.kakaocdn.net/kas/static/ba.min.js" async></script>
+                <span class="text-gray-400 text-xs font-medium mt-1">상단 추천 광고 영역</span>
             </div>
         </div>
     </div>
@@ -73,6 +80,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <button onclick="showPage('home')" class="text-sm text-blue-600 hover:underline mb-4 inline-flex items-center gap-1">
                     <i class="fa-solid fa-arrow-left"></i> 목록으로 돌아가기
                 </button>
+                <div id="post-detail-content">
                     </div>
 
                 <div class="my-8 text-center">
@@ -124,7 +132,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
                 <div class="flex items-center gap-4 mb-4">
                     <div class="w-14 h-14 bg-gradient-to-tr from-blue-500 to-indigo-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                        
+                        T
                     </div>
                     <div>
                         <h3 class="font-bold text-gray-900 text-lg">에디터</h3>
@@ -139,8 +147,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 text-center">
                 <span class="text-[10px] text-gray-400 block mb-2">ADVERTISEMENT</span>
                 <div class="bg-gray-50 border border-dashed border-gray-300 rounded-lg min-h-64 flex flex-col items-center justify-center p-2">
-                  
-                    <span class="text-[10px] text-gray-400 mt-2">건강</span>
+                    <ins class="kakao_ad_area" style="display:none;"
+                        data-ad-unit = "DAN-NiHRZWuxaxoYJkAR"
+                        data-ad-width = "300"
+                        data-ad-height = "250"></ins>
+                    <script type="text/javascript" src="//t1.kakaocdn.net/kas/static/ba.min.js" async></script>
+                    <span class="text-[10px] text-gray-400 mt-2">우측 사이드바 광고 영역</span>
                 </div>
             </div>
 
@@ -237,7 +249,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     id: 1, 
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "가슴이 답답하고 찌르는 듯한 통증, 설마 심장 질환? 원인별 증상과 대처법",
     summary: "갑자기 찾아오는 가슴 통증과 답답함, 콕콕 찌르는 듯한 느낌에 덜컥 겁이 나셨나요? 심장 문제부터 스트레스까지, 원인별 증상 차이와 즉각적인 해결 방법을 알아봅니다.",
     date: "2026-06-04", 
@@ -275,7 +287,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
             {
     id: 2, // 기존 글 번호(7) 다음 숫자로 수정
-    category: "tech", 
+    category: "life", 
     categoryKo: "생활정보", 
     title: "100% 충전이 오히려 독? 스마트폰 배터리 수명 2배 늘리는 올바른 충전 습관",
     summary: "비싸게 주고 산 스마트폰, 1~2년만 지나면 배터리가 살살 녹아내려 고민이셨죠? 잘못 알려진 배터리 상식을 바로잡고, 수명을 비약적으로 늘려주는 초간단 관리법을 전해드립니다.",
@@ -293,14 +305,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">3. 배터리의 최대 적, '발열'을 피해라</h3>
         <p class="mb-4 text-gray-700 leading-relaxed">배터리 수명을 단축시키는 가장 치명적인 요인은 바로 <b>고온(열)</b>입니다. 스마트폰을 충전하면서 고사양 게임을 하거나 유튜브 동영상을 시청하면 기기가 뜨거워지는 것을 느낄 수 있는데요. 이는 배터리 노화를 촉진하는 주범입니다. 또한, 두꺼운 케이스를 낀 채 충전하거나 여름철 뜨거운 자동차 대시보드 위에 스마트폰을 방치하는 행위는 절대 피해야 합니다.</p>
-        <div class="my-8 p-4 bg-gray-50 rounded-xl border border-gray-100 text-center">
-        <div class="text-[10px] text-gray-400 mb-2 uppercase">Advertisement</div>
-        <ins class="kakao_ad_area" style="display:block;" 
-             data-ad-unit="DAN-Zevyq7pc7vT6bJAb" 
-             data-ad-width="300" 
-             data-ad-height="250"></ins>
-         </div>
-            
+
         <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">4. 밤샘 충전이 불안하다면? '최적화 충전' 활용하기</h3>
         <p class="mb-4 text-gray-700 leading-relaxed">많은 분들이 잠들기 전 스마트폰을 충전기에 꽂아두고 아침에 일어납니다. 100% 충전이 완료된 후에도 계속 전류가 흐르면 미세한 과충전과 발열이 발생합니다. 최신 스마트폰(아이폰, 갤럭시 등)에는 이를 방지하기 위한 <b>'최적화된 배터리 충전' 또는 '적응형 충전'</b> 기능이 있습니다. 사용자의 수면 패턴을 학습해 밤새 80%만 충전해 두었다가, 잠에서 깨어나기 직전에 100%를 채워주는 똑똑한 기능이니 반드시 활성화해 두세요.</p>
 
@@ -314,7 +319,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
             {
     id: 3, // 기존 글 번호(8) 다음 숫자로 수정
-    category: "tech", 
+    category: "life", 
     categoryKo: "생활정보", 
     title: "하루 종일 틀어도 안심? 에어컨 전기세 50% 아끼는 인버터·정속형 구별법과 작동 공식",
     summary: "다가오는 여름, 에어컨을 껐다 켰다 하느라 전기세만 더 나오고 계셨나요? 우리 집 에어컨 종류에 맞는 올바른 가동법으로 전기요금을 획기적으로 줄이는 꿀팁을 공개합니다.",
@@ -346,7 +351,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
             {
     id: 4, // 기존 글 번호(9) 다음 숫자로 수정
-    category: "tech", 
+    category: "life", 
     categoryKo: "생활정보", 
     title: "섬유유연제를 부어도 퀴퀴한 빨래 냄새! 옷에서 냄새나는 진짜 원인과 확실한 해결법",
     summary: "열심히 세탁기를 돌렸는데도 옷에서 걸레 냄새나 쉰내가 나 고민이셨나요? 향기로 악취를 덮으려 하면 역효과만 납니다. 원인부터 완벽한 박멸 노하우까지 전부 알려드립니다.",
@@ -378,7 +383,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
             {
     id: 5, // 기존 글 번호(10) 다음 숫자로 수정
-    category: "tech", 
+    category: "life", 
     categoryKo: "생활정보", 
     title: "누렇게 변한 흰 운동화는 그만! 새 신발처럼 하얗게 만드는 초간단 세탁·건조 공식",
     summary: "하얀 운동화, 세탁 한 번 잘못했다가 누런 얼룩이 생겨 당황하셨나요? 힘들게 솔질하지 않고도 찌든 때를 싹 빼고 하얗게 되돌리는 황금 비법을 공개합니다.",
@@ -431,6 +436,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">3. 복지몰 내에서 직접 상품 구매하기</h3>
         <p class="mb-4 text-gray-700 leading-relaxed">가장 대표적인 사용 방법은 복지몰 내에 입점한 다양한 카테고리의 상품을 직접 구매하는 것입니다. <b>가전제품, 생활용품, 건강기능식품은 물론이고 현장 근무 시 필요한 작업복이나 안전화 등</b>을 시중가보다 저렴한 임직원 특가로 구매할 수 있습니다. 결제 시 결제 수단을 '복지 포인트'로 지정하면 잔액에서 즉시 차감됩니다.</p>
 
+        <div class="my-6">
+            <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=800&q=80" alt="복지몰 쇼핑 및 결제 화면 이미지" class="w-full rounded-lg shadow-md mb-2">
+            <p class="text-sm text-gray-500 text-center">▲ 다양한 카테고리의 상품을 특가로 구매할 수 있는 결제 시스템</p>
+        </div>
 
         <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">4. 외부 제휴처(기프티콘, 여행 등) 활용 방법</h3>
         <p class="mb-4 text-gray-700 leading-relaxed">복지몰 내 상품 구매 외에도 활용도가 높은 메뉴가 바로 <b>'모바일 쿠폰(기프티콘)'</b> 코너입니다. 스타벅스, 투썸플레이스 등 카페 쿠폰이나 치킨, 피자 등 배달 브랜드 기프티콘을 포인트로 즉시 구매해 실생활에서 유용하게 쓸 수 있습니다. 또한, 이지웰과 제휴된 숙박 플랫폼이나 기차표 예매 등 여행/문화 카테고리에서도 차감 신청을 통해 포인트를 사용할 수 있습니다.</p>
@@ -446,7 +455,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {
     id: 7, // 기존 글 번호(12) 다음 숫자로 수정
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "설마 나도 당뇨? 당뇨병 초기 증상 진단법과 혈당 잡는 식습관·생활습관 총정리",
     summary: "침묵의 살인마라고 불리는 당뇨병, 초기 신호를 놓치면 평생 고생할 수 있습니다. 당뇨를 의심해 봐야 할 초기 증상부터 약 없이 혈당 낮추는 완벽한 생활 공식까지 알아봅니다.",
     date: "2026-06-04", 
@@ -482,7 +491,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {
     id: 8, // 기존 글 번호(13) 다음 숫자로 수정
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "아침마다 천근만근 만성피로와 수면장애, 매일 먹는 '바나나' 한 개의 놀라운 효능",
     summary: "자도 자도 피곤한 만성피로와 밤마다 뒤척이는 수면장애로 고통받고 계시나요? 비싼 영양제 대신 천연 수면제이자 피로 해소제인 바나나의 과학적인 효능을 알아봅니다.",
     date: "2026-06-04", 
@@ -504,7 +513,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="mb-4 text-gray-700 leading-relaxed">우리 몸의 면역 세포 70% 이상이 장에 집중되어 있다는 사실, 알고 계셨나요? 장이 건강하지 못해 독소가 쌓이면 온몸이 무겁고 피로해집니다. 바나나에 함유된 <b>수용성 식이섬유인 '펙틴'과 '프락토올리고당'</b>은 장내 유익균의 먹이가 되어 장 운동을 활발하게 하고 변비를 예방합니다. 장이 깨끗해지면 체내 독소가 배출되면서 자연스럽게 몸이 가벼워지고 아침에 일어날 때 느끼는 만성적인 피로감이 눈에 띄게 줄어듭니다.</p>
 
         <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">5. 바나나 효능을 극대화하는 올바른 섭취 방법</h3>
-        <p class="mb-4 text-gray-700 leading-relaxed">수면장애 개선을 위해 바나나를 드실 때는 <b>초록빛이 도는 것보다 검은 반점(슈가 스팟)이 생긴 잘 익은 바나나</b>를 선택하는 것이 좋습니다. 숙성될수록 트립토판과 항산화 성분의 함량이 높아지기 때문입니다. 다만, 바나나는 마그네슘 함량이 높아 <b>심한 공복에 단독으로 먹으면 혈액 내 미네랄 균형을 깨트려 심혈관에 무리</b>를 줄 수 있으므로, 가급적 식후에 드시거나 견과류, 우유 등과 함께 곁들여 드시는 것을 추천합니다.참고용으로만 사용하시기 바랍니다. 의학적인 자문이나 진단이 필요한 경우 전문가에게 문의하세요.</p>
+        <p class="mb-4 text-gray-700 leading-relaxed">수면장애 개선을 위해 바나나를 드실 때는 <b>초록빛이 도는 것보다 검은 반점(슈가 스팟)이 생긴 잘 익은 바나나</b>를 선택하는 것이 좋습니다. 숙성될수록 트립토판과 항산화 성분의 함량이 높아지기 때문입니다. 다만, 바나나는 마그네슘 함량이 높아 <b>심한 공복에 단독으로 먹으면 혈액 내 미네랄 균형을 깨트려 심혈관에 무리</b>를 줄 수 있으므로, 가급적 식후에 드시거나 견과류, 우유 등과 함께 곁들여 드시는 것을 추천합니다.참고용으로만 사용하시기 바랍니다. 의학적인 자문이나 진단이 필요한 경우 전문가에게 문의하세요.
+</p>
     `
 },
 
@@ -514,7 +524,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {
     id: 9, // 기존 글 번호(14) 다음 숫자로 수정
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "설마 내가 치매? 초간단 치매 자가진단법과 뇌를 젊게 만드는 생활 습관·운동 공식",
     summary: "깜빡깜빡하는 건망증이 잦아져 치매가 아닐까 두려우셨나요? 보건복지부 기준 자가진단 테스트부터 뇌세포를 깨우는 식습관, 운동법까지 완벽하게 정리해 드립니다.",
     date: "2026-06-04", 
@@ -554,7 +564,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {
     id: 10, // 기존 글 번호(15) 다음 숫자로 수정
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "눈이 침침하고 뻑뻑할 때, 단순 피로가 아닐까? 원인별 증상과 시력 보호 대책",
     summary: "스마트폰을 조금만 봐도 눈이 침침하고 뻑뻑해져 눈물이 흐르시나요? 노안부터 안구건조증까지, 침침한 눈을 맑고 시원하게 되돌리는 확실한 해결 방안을 알려드립니다.",
     date: "2026-06-04", 
@@ -586,7 +596,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {
     id: 11, // 기존 글 번호(16) 다음 숫자로 수정
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "서 있을 땐 괜찮은데 누우면 허리 통증과 찌릿함! 원인별 척추 신호와 수면 자세 교정법",
     summary: "편안하게 쉬어야 할 침대에만 누우면 허리가 뻐근하고 다리까지 찌릿한 느낌이 드시나요? 척추관 협착증부터 허리디스크까지, 누웠을 때 찾아오는 통증의 원인과 해결책을 알아봅니다.",
     date: "2026-06-04", 
@@ -622,7 +632,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {
     id: 12, // 기존 글 번호(17) 다음 숫자로 수정
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "손발이 시리고 몸이 찬 사람에게 보약이 되는 약초 4가지와 필수 주의사항",
     summary: "유독 추위를 많이 타고 손발이 차가워 고생이신가요? 몸을 따뜻하게 성질을 바꾸어주는 대표적인 약초들과 안전한 섭취를 위한 한방 주의사항을 전해드립니다.",
     date: "2026-06-04", 
@@ -656,7 +666,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
             {
     id: 13, // 기존 글 번호(18) 다음 숫자로 수정
-    category: "tech", 
+    category: "life", 
     categoryKo: "생활정보", 
     title: "초보 등산러 필독! 안전하고 즐거운 산행을 위한 필수 준비물·의류·상비약 가이드",
     summary: "주말에 가벼운 마음으로 등산을 계획하고 계시나요? 아무리 낮은 산이라도 철저한 준비는 필수입니다. 배낭 속 필수 아이템부터 꼭 알아야 할 산행 안전 수칙을 정리해 드립니다.",
@@ -699,7 +709,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {
     id: 14, // 기존 글 번호(19) 다음 숫자로 수정
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "만성 염증은 만병의 근원! 몸속 염증을 싹 지워주는 천연 식물과 음식 관리법",
     summary: "특별한 이유 없이 몸이 붓고 피곤하다면 몸속 '만성 염증'이 원인일 수 있습니다. 부작용 없이 염증을 다스리는 천연 식물과 올바른 예방 관리법을 소개합니다.",
     date: "2026-06-04", 
@@ -736,7 +746,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {
     id: 15, // 기존 글 번호(20) 다음 숫자로 수정
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "노력에 비해 살이 안 빠진다면? 다이어트 성공을 위한 식단·영양소·운동 황금 공식",
     summary: "죽어라 운동해도 체지방이 그대로라면 '방법'이 잘못된 것일 수 있습니다. 근육은 지키고 체지방만 쏙 빼는 과학적인 영양 섭취법과 효율적인 운동 루틴을 공개합니다.",
     date: "2026-06-04", 
@@ -767,9 +777,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     `
 },
             {
-    id: 16, 
+    id: 16, // 기존 글 번호(21) 다음 숫자로 수정
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "갑자기 생긴 동전 크기 빈자리! 원형탈모 원인 분석과 면역력 회복을 위한 생활·식습관 총정리",
     summary: "어느 날 문득 발견한 동전 모양의 탈모반에 가슴이 덜컥 내려앉으셨나요? 단순 스트레스성 탈모와는 격이 다른 원형탈모의 진짜 원인과 모근을 되살리는 과학적인 면역 케어 공식을 아주 상세히 파헤쳐 봅니다.",
     date: "2026-06-04", 
@@ -806,9 +816,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     `
 },
             {
-    id: 17, 
-    category: "life", 
-    categoryKo: "건강정보", 
+    id: 17, // 기존 글 번호(22) 다음 숫자로 수정
+    category: "tech", 
+    categoryKo: "생활정보", 
     title: "하루 30분의 기적! 바쁜 현대인을 위한 효율 극대화 다이어트 성공 공식",
     summary: "시간이 없어서 다이어트를 못 한다는 핑계는 이제 그만! 하루 딱 30분만 투자해 체지방을 불태우는 효율적인 운동법과 요요 없는 식·생활습관을 공개합니다.",
     date: "2026-06-04", 
@@ -835,8 +845,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 },
             {
     id: 18, // 기존 글 번호(23) 다음 숫자로 수정
-    category: "life", 
-    categoryKo: "건강정보", 
+    category: "tech", 
+    categoryKo: "생활정보", 
     title: "50대 여성 뱃살이 안 빠지는 진짜 이유! 호르몬 변화를 극복하는 나잇살 감량 공식",
     summary: "나이가 들면서 예전과 똑같이 먹고 운동해도 유독 뱃살만 두툼해져 고민이신가요? 50세 전후 여성의 호르몬 변화에 맞춘 과학적인 체지방 컷팅 비법을 공개합니다.",
     date: "2026-06-04", 
@@ -869,8 +879,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 },
             {
     id: 19, // 기존 글 번호(24) 다음 숫자로 수정
-    category: "life", 
-    categoryKo: "건강정보", 
+    category: "tech", 
+    categoryKo: "생활정보", 
     title: "허리 통증 잡고 나잇살 빼는 치트키! 50대 여성 맞춤 코어 강화 운동 Best 4",
     summary: "50세가 넘으면서 이유 없는 허리 통증과 볼록한 뱃살로 고민이신가요? 관절 무리 없이 속근육을 단단하게 다져주는 핵심 코어 운동과 안전한 실천법을 공개합니다.",
     date: "2026-06-04", 
@@ -909,7 +919,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              {
     id: 20, // 기존 글 번호(25) 다음 숫자로 수정
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "탄탄한 각선미와 기초체력의 완성! 20대 여성을 위한 하체 강화 운동 및 영양 식단 가이드",
     summary: "자꾸만 처지는 엉덩이와 군살이 붙는 허벅지 라인으로 고민이신가요? 20대 여성에게 꼭 필요한 효율적인 하체 운동 루틴과 탄력 있는 몸매를 완성하는 영양 공식까지 모두 담았습니다.",
     date: "2026-06-04", 
@@ -953,7 +963,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              {
     id: 21, // 기존 글 번호(26) 다음 숫자로 수정
     category: "finance", 
-    categoryKo: "경제정보", 
+    categoryKo: "재택크", 
     title: "2026년 대전환기, 내 돈 어디에 굴릴까? 초보자를 위한 투자 성향별 재테크 포트폴리오",
     summary: "금리 변동과 글로벌 시장의 불확실성이 커진 지금, 무작정 남들을 따라 투자하는 것은 위험합니다. 내 자산 규모와 성향에 맞는 최적의 금융 재테크 처를 콕 짚어 드립니다.",
     date: "2026-06-04", 
@@ -993,8 +1003,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 },
              {
     id: 22, // 기존 글 번호(27) 다음 숫자로 수정
-    category: "tech", // IT/테크/블로그 운영 관련 카테고리 선택
-    categoryKo: "생활정보", 
+    category: "finance", // IT/테크/블로그 운영 관련 카테고리 선택
+    categoryKo: "재테크", 
     title: "구글 애드센스 승인의 첫걸음! 검색 엔진 웹마스터도구 사이트맵 등록 방법 완벽 가이드",
     summary: "애드센스 광고 수익을 올리기 위해선 내가 쓴 글이 구글과 네이버에 정상적으로 노출되어야 합니다. 내 블로그의 지도를 제출하는 사이트맵(sitemap.xml) 등록법을 쉽게 알려드립니다.",
     date: "2026-06-04", 
@@ -1029,7 +1039,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              {
     id: 23, 
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "50대부터 시작하는 기초체력 리부트, 하루 15분으로 노화의 시계를 돌리는 법",
     summary: "나이가 들면서 부쩍 쉽게 지치고 회복이 더디다면? 50대 맞춤형 기초체력 강화 전략을 소개합니다. 무리한 운동 대신 생존 근육을 키우는 하루 15분의 기적을 만나보세요.",
     date: "2026-06-04", 
@@ -1051,7 +1061,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              {
     id: 24, 
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "이유 없이 몸이 무겁고 기력이 없을 때, 당장 실천해야 할 3가지 충전법",
     summary: "특별히 아픈 곳도 없는데 온몸의 에너지가 방전된 것처럼 무기력하신가요? 몸의 신진대사를 깨우고 기력을 빠르게 회복할 수 있는 일상 속 핵심 가이드를 확인해보세요.",
     date: "2026-06-04", 
@@ -1073,7 +1083,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              {
     id: 25, 
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "콜록콜록 오래가는 마른기침, 목을 촉촉하게 달래주는 최고의 건강 약초 3가지",
     summary: "유독 환절기나 건조한 날씨만 되면 찾아오는 불청객 마른기침. 가래도 없는데 목이 간지럽고 찢어질 듯 아프다면, 약해진 기관지 점막을 촉촉하게 채워줄 '이 약초들'에 주목해 보세요.",
     date: "2026-06-04", 
@@ -1098,7 +1108,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              {
     id: 26, // 글 번호 수정
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "기초 면역력 키우기! 몸을 따뜻하게 하고 병을 막아주는 최고의 면역 약초 5가지",
     summary: "쉽게 피로하고 감기에 자주 걸린다면 면역력에 비상이 걸린 신호입니다. 자연에서 찾은 5가지 대표 약초로 무너진 몸의 균형을 되찾고 방어력을 높여보세요.",
     date: "2026-06-04", 
@@ -1133,7 +1143,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              {
     id: 27, 
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "40대 여성 면역력 높이는 방법! 몸을 따뜻하게 하고 병을 막아주는 최고의 면역 약초 5가지", // 💡 제목 키워드 강화
     summary: "체온이 떨어지고 쉽게 피로를 느끼는 여성분들을 위한 특급 처방! 자연에서 찾은 5가지 대표 약초와 일상 속 실천법으로 무너진 몸의 균형을 되찾고 신체 방어력을 2배로 높여보세요.",
     date: "2026-06-04", 
@@ -1158,7 +1168,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">4. 오장의 기능을 고르게 높이는, 오미자</h3>
         <p class="mb-4 text-gray-700 leading-relaxed">단맛, 신맛, 쓴맛, 짠맛, 매운맛의 다섯 가지 매력을 가진 <b>오미자</b>는 거동이 힘들거나 만성 피로에 시달릴 때 기적 같은 에너지를 줍니다. 항산화 성분인 <b>쉬잔드린</b>이 풍부하여 간 세포를 보호하고 면역력을 떨어뜨리는 주범인 유해 활성산소를 제거해 세포의 노화를 막아줍니다.</p>
 
-        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">5. 백가지 독을 풀어주는 보약, 백출 (삽주 뿌리)</h3>
+        <h3 class="text-xl font-bold text-gray-900 mt-6합 mb-3">5. 백가지 독을 풀어주는 보약, 백출 (삽주 뿌리)</h3>
         <p class="mb-4 text-gray-700 leading-relaxed">면역 세포의 70%는 장(腸)에 존재한다는 사실, 알고 계셨나요? <b>백출</b>은 위장 기능을 튼튼하게 하여 <b>소화 흡수력을 높이고 장내 환경을 개선</b>하는 데 숨겨진 명약입니다. 속이 차서 설사를 자주 하거나 면역력이 떨어져 소화 기능까지 함께 약해진 분들에게 훌륭한 처방이 됩니다.</p>
 
         <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">💡 생활 속에서 실천하는 여성 면역력 높이는 방법</h3>
@@ -1168,7 +1178,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              {
     id: 28, // 글 번호 수정 (기존 글 다음 숫자로 세팅)
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "처진 엉덩이 심폐소생술! 과학적으로 증명된 여성 엉덩이 키우는 방법과 루틴",
     summary: "단순히 스쿼트만 한다고 엉덩이가 커질까요? 골반 라인을 살리고 탄탄한 힙을 만들기 위해 꼭 알아야 할 '둔근 타겟팅' 운동법과 식단 노하우를 공개합니다.",
     date: "2026-06-06", 
@@ -1201,7 +1211,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              {
     id: 29, // 기존 글 번호 다음 숫자로 세팅
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "계단 내려올 때 시큰? '이것' 모르면 평생 연골 닳아 없어집니다 | 관절염에 좋은 음식 약초 총정리", // 💡 후킹 요소를 가미한 제목
     summary: "나이 들면 당연한 통증? 방치하다간 인공관절 수술대 위에 오를 수 있습니다. 무릎 통증과 뻣뻣함을 싹 잡아줄 관절염에 좋은 음식과 약초, 그리고 영양제 고르는 팁까지 핵심만 쏙쏙 짚어드립니다.",
     date: "2026-06-06", 
@@ -1228,7 +1238,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {
     id: 30, // 기존 글 번호 다음 숫자로 수정
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "“매일 1시간씩 뛰어도 뱃살 안 빠진 이유” 숨은 허리둘레 싹 줄여주는 1등 운동법",
     summary: "열심히 달리는데도 왜 뱃살은 그대로일까요? 무작정 뛰기만 하면 오히려 지방이 축적되는 과학적 이유와, 허리둘레를 확실하게 줄여주는 가장 강력한 운동 공식을 공개합니다.",
     date: "2026-06-04", 
@@ -1277,7 +1287,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {
     id: 31, // 기존 글 번호 다음 숫자로 수정
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "항산화 성분 폭발! 심장병 예방과 전립선암에 좋은 최고의 과일은?",
     summary: "전립선암과 심장병 예방에 탁월한 라이코펜의 대명사 토마토, 그런데 이 토마토보다 라이코펜이 무려 76배나 많은 '천상의 열매'가 있습니다. 남성 건강과 혈관을 지켜주는 놀라운 슈퍼푸드를 소개합니다.",
     date: "2026-06-04", 
@@ -1307,7 +1317,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {
     id: 32, // 기존 글 번호 다음 숫자로 수정
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "“늙지 않는 몸의 비밀” 세포 나이를 되돌리는 노화 방지 음식과 생활 습관",
     summary: "시간의 흐름은 막을 수 없지만, 노화의 속도는 우리가 조절할 수 있습니다. 몸속 활성산소를 제거해 세포 나이를 젊게 유지하는 검증된 노화 방지 식단과 일상 속 핵심 습관을 소개합니다.",
     date: "2026-06-06", 
@@ -1343,7 +1353,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {       
   id: 33,
   category: "life",
-  categoryKo: "건강정보",
+  categoryKo: "생활정보",
   title: "집에서 하는 근력운동 루틴: 기구 없는 초보자 기초 운동 8주 완성 가이드",
   summary: "헬스장에 가기 힘든 바쁜 일상 속에서 기구 없이 오직 맨몸만으로 탄탄하고 건강한 몸을 만들고 싶으신가요? 초보자를 위한 전신 맨몸 근력운동 Best 5와 단계별 8주 루틴, 과학적인 영양 가이드까지 한 번에 정리해 드립니다.",
   date: "2026-06-07",
@@ -1566,12 +1576,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p class="mb-4 text-gray-700 leading-relaxed font-semibold text-blue-600">
       오늘 알려드린 8주 완성 홈트레이닝 기초 루틴을 스케줄러에 적어두고 오늘 저녁 첫 번째 세트를 가볍게 시작해 보세요. 당신의 건강하고 아름다운 변화를 진심으로 응원합니다!
     </p>
-      `
+  `
  },
             {
     id: 34, 
     category: "life", 
-    categoryKo: "건강정보", 
+    categoryKo: "생활정보", 
     title: "소리 없는 저승사자 '당뇨', 혈당 잡는 음식과 필수 예방법",
     summary: "당뇨는 초기 증상이 없어 방치하기 쉽지만, 합병증이 무서운 질환입니다. 일상에서 혈당을 안정시키는 최고의 음식들과 당뇨를 막는 생활 수칙을 정리했습니다.",
     date: "2026-06-10", 
@@ -1605,7 +1615,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {
     id: 35,
     category: "finance",
-    categoryKo: "경제정보",
+    categoryKo: "금융·재테크",
     title: "2026 정부 생활지원금(고유가 피해지원금) 신청방법 및 자격조건 총정리",
     summary: "정부에서 지원하는 2026 고유가 피해 생활지원금 2차 신청이 진행 중입니다. 소득 하위 70%를 대상으로 지역별 최대 25만 원까지 지급되는 이번 지원금의 자격 조건과 신청 방법을 빠르게 정리했습니다.",
     date: "2026-06-10",
@@ -1647,7 +1657,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {
     id: 36,
     category: "tech",
-    categoryKo: "생활정보",
+    categoryKo: "기술·IT",
     title: "구글·네이버에 내 웹사이트 노출하는 웹마스터 도구 등록 방법",
     summary: "공들여 만든 웹사이트나 블로그가 검색 결과에 나오지 않아 고민이신가요? 구글 서치 콘솔과 네이버 서치어드바이저를 이용해 사이트를 검색 엔진에 노출시키는 필수 검색엔진최적화(SEO) 단계를 정리했습니다.",
     date: "2026-06-10",
@@ -1686,7 +1696,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {
     id: 37,
     category: "life",
-    categoryKo: "건강정보",
+    categoryKo: "생활정보",
     title: "눈을 감을 때 콕콕, 바늘로 찌르는 듯한 눈 통증 원인과 대처법",
     summary: "눈을 깜빡이거나 감을 때 바늘로 찌르는 듯한 극심한 통증이 느껴진다면 각막 상처나 결석을 의심해야 합니다. 증상별 원인과 응급 대처법을 정리했습니다.",
     date: "2026-06-10",
@@ -1723,7 +1733,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {
     id: 38,
     category: "life",
-    categoryKo: "건강정보",
+    categoryKo: "생활정보",
     title: "갑작스러운 왼쪽 아랫배 통증, 여성분들이 꼭 체크해야 할 4가지 원인과 응급 신호",
     keywords: ["여자 왼쪽 아랫배 통증", "골반염 증상", "난소낭종", "자궁외임신", "게실염 통증", "요로결석"],
     summary: "여성의 아랫배는 여러 장기가 모여 있어 통증의 원인도 참 다양해요. 유독 왼쪽 아랫배가 콕콕 쑤시거나 묵직할 때 의심해 볼 수 있는 원인과 꼭 병원에 가야 하는 신호를 다정하게 정리해 드려요.",
@@ -1764,7 +1774,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {
     id: 39,
     category: "life",
-    categoryKo: "건강정보",
+    categoryKo: "생활정보",
     title: "중년 남성의 말 못 할 고민, 전립선 건강을 지키는 생활 수칙과 추천 음식",
     keywords: ["전립선 건강", "전립선비대증 예방", "전립선에 좋은 음식", "토마토 라이코펜", "남성 건강 관리"],
     summary: "나이가 들면서 전립선 비대증이나 염증으로 배뇨 불편을 겪는 남성분들이 많아집니다. 일상에서 전립선 건강을 지키는 검증된 예방법과 좋은 음식들을 다정하게 정리해 드릴게요.",
@@ -1798,555 +1808,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <strong>💖 에디터의 따뜻한 조언:</strong> 저녁 늦게 마시는 과도한 수분이나 카페인, 술은 방광을 자극해 야간뇨 증상을 악화시킬 수 있어요. 저녁 이후에는 수분 섭취를 조금 줄여주시고, 50대 이후라면 증상이 없더라도 매년 정기적인 전립선 특이항원(PSA) 검사를 통해 건강을 체크해 보시는 것이 가장 든든한 예방법이랍니다.
         </p>
     `
-},
-            {
-    id: 40,
-    category: "tech",
-    categoryKo: "생활정보",
-    title: "능력 중심으로 취업의 문을 열다! 2026 고졸인재 채용엑스포 100% 활용 가이드",
-    keywords: ["고졸인재 채용엑스포", "고졸 취업", "고졸 채용 박람회", "특성화고 취업", "현장 면접 팁"],
-    summary: "고졸 청년 인재들을 위한 국내 최대 규모의 취업 박람회, '고졸인재 채용엑스포'가 개최됩니다. 대기업, 공기업, 우수 중견기업들이 참여하는 이번 행사의 주요 프로그램과 필수 준비 사항을 다정하게 안내해 드려요.",
-    date: "2026-06-10",
-    author: "정보 에디터",
-    readTime: "3분 소요",
-    content: `
-        <p class="mb-4 text-gray-700 leading-relaxed">학력보다는 능력과 열정 중심의 채용 문화가 널리 퍼지면서, 고등학교 졸업 예정자 및 청년 구직자들을 위한 취업의 장이 열렸습니다. 국내 최대 규모를 자랑하는 '고졸인재 채용엑스포'는 매년 수많은 기업과 인재들이 만나 꿈을 현실로 만드는 공간인데요. 올해 엑스포를 알차게 활용해 합격률을 높일 수 있는 핵심 포인트들을 소개해 드릴게요.</p>
-        
-        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">1. 2026 고졸인재 채용엑스포 주요 프로그램</h3>
-        
-        <h4 class="text-lg font-semibold text-gray-800 mt-4 mb-2">① 기업별 현장 면접 및 채용 상담</h4>
-        <p class="mb-4 text-gray-700 leading-relaxed">대기업 생산·기술직, 주요 공기업, 국책은행 및 우수 금융권, 유망 중견·중소기업의 인사담당자들이 직접 부스를 운영해요. 현장에서 직접 이력서를 제출하고 면접을 볼 수 있는 기회가 제공되므로, 실제 취업으로 이어지는 가장 빠른 지름길이 될 수 있습니다.</p>
-        
-        <h4 class="text-lg font-semibold text-gray-800 mt-4 mb-2">② 맞춤형 취업 컨설팅 및 부대행사</h4>
-        <p class="mb-4 text-gray-700 leading-relaxed">아직 면접이 낯설고 두려운 학생들을 위해 AI 면접 체험, 자기소개서 무료 첨삭, 퍼스널 컬러 진단, 이미지 메이킹(메이크업 및 헤어 스타일링), 무료 이력서 사진 촬영 등 다채로운 이벤트 부스가 마련되어 구직 활동을 다방면으로 지원합니다.</p>
-        
-        <h4 class="text-lg font-semibold text-gray-800 mt-4 mb-2">③ 선배들의 생생한 토크 콘서트</h4>
-        <p class="mb-4 text-gray-700 leading-relaxed">고졸 전형으로 먼저 입사해 당당하게 역량을 펼치고 있는 직장인 선배들이 무대에 올라, 생생한 합격 수기와 실무 꿀팁, '선취업 후진학' 제도를 활용한 커리어업 노하우를 아낌없이 공유해 줄 예정이에요.</p>
-        
-        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">2. 엑스포 가기 전, 이것만은 꼭 준비하세요!</h3>
-        <p class="mb-4 text-gray-700 leading-relaxed">무작정 방문하기보다는 철저한 사전 준비가 동반되어야 기회를 선점할 수 있답니다.</p>
-        <ul class="list-disc list-inside mb-4 text-gray-700 leading-relaxed pl-2">
-            <li class="mb-1"><strong>공식 홈페이지 사전 등록:</strong> 미리 온라인으로 참가 신청을 해두면 당일 번거로운 대기 과정 없이 빠르게 입장할 수 있어 시간을 절약할 수 있어요.</li>
-            <li class="mb-1"><strong>이력서 및 자기소개서 다량 출력:</strong> 관심 있는 기업의 부스에서 즉석 면접을 진행할 수 있으니, 여유 있게 5~10부 정도 출력해서 챙겨가시는 것이 좋습니다.</li>
-            <li class="mb-1"><strong>단정한 옷차림은 기본:</strong> 정장이나 깔끔한 교복을 착용해 첫인상에서 신뢰감을 주는 것이 유리해요. 첫 만남에서 진중한 태도를 보여주는 것이 합격률을 높여줍니다.</li>
-            <li class="mb-1"><strong>참여 기업 미리 분석하기:</strong> 박람회 라인업을 살펴보고 내가 지원하고 싶은 기업 2~3곳의 최신 뉴스나 인재상을 미리 파악해 두면 면접에서 깊은 인상을 남길 수 있어요.</li>
-        </ul>
-        
-        <p class="mb-4 text-gray-700 leading-relaxed mt-4 bg-teal-50 p-4 rounded-lg border border-teal-200">
-            <strong>💖 에디터의 따뜻한 조언:</strong> 처음 참가하는 박람회라 긴장되고 떨리는 건 당연한 일이에요. 가벼운 마음으로 관심 있는 기업 부스에 들러 상담을 받아보는 것만으로도 앞으로의 취업 준비에 큰 나침반이 되어줄 거예요. 자신감을 가지고 도전해 보세요. 여러분의 빛나는 첫 도약을 진심으로 응원합니다!
-        </p>
-    `
-},
-            {
-    id: 41,
-    category: "finance",
-    categoryKo: "경제정보",
-    title: "공사 현장 멈춰 세운 레미콘 운송 거부 사태, 내 아파트 입주 날짜와 분양가에 불똥 튈까?",
-    keywords: ["레미콘 운송 거부", "건설 현장 마비", "아파트 입주 지연", "공사비 인상 원인", "분양가 상승"],
-    summary: "공급이 조금만 끊겨도 건축 공정 전체가 마비되는 레미콘 자재의 특성 때문에 분양 시장이 긴장하고 있습니다. 운송 중단이 일어난 진짜 배경과 예비 구직자·입주자가 알아야 할 리스크를 짚어 드려요.",
-    date: "2026-06-10",
-    author: "비즈 에디터",
-    readTime: "4분 소요",
-    content: `
-        <p class="mb-4 text-gray-700 leading-relaxed">회전하는 통을 뒤에 달고 도로를 달리는 레미콘 차량들은 건축물 구축에 없어서는 안 될 핵심 자재를 나르는 수단입니다. 최근 이 차량들의 운행이 전면 중단되면서 주요 주택 건설 현장의 믹서기가 모두 멈춰 섰습니다. 단순한 노사 갈등을 넘어 내 집 마련을 앞둔 실수요자들의 가계 금융 일정까지 흔들 수 있는 이번 사태의 쟁점을 면밀히 들여다보았습니다.</p>
-        
-        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">1. 합의점을 찾지 못하는 대립의 핵심 요인</h3>
-        <p class="mb-4 text-gray-700 leading-relaxed">이번 공급 중단 사태가 장기화 국면에 접어든 이유는 물가 상승에 따른 생존권 요구와 원가 절감을 외치는 업계의 입장 차이가 완강하기 때문입니다.</p>
-        <ul class="list-disc list-inside mb-4 text-gray-700 leading-relaxed pl-2">
-            <li class="mb-1"><strong>차량 유지 비용의 압박:</strong> 경유 가격의 불확실성과 각종 소모품비가 가파르게 상승한 반면, 건당 지급받는 운반비는 수년째 정체되어 실질 소득이 하락했다는 것이 차주들의 주장입니다.</li>
-            <li class="mb-1"><strong>건설 경기 불황과 제조사 부담:</strong> 반대로 자재 제조 기업들은 부동산 시장 장기 침체로 출하량 자체가 급감한 상황에서 비용 인상을 전적으로 수용하기는 어렵다는 입장을 고수하고 있습니다.</li>
-            <li class="mb-1"><strong>고용 형태의 특수성:</strong> 차주들이 개인 사업자 자격을 지닌 '특수고용노동자'라는 점 때문에, 협상의 주체성과 법적 권리 범위를 두고도 양측의 시각 차가 좁혀지지 않고 있습니다.</li>
-        </ul>
-        
-        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">2. 90분의 골든타임, 대체재 없는 자재의 한계</h3>
-        <p class="mb-4 text-gray-700 leading-relaxed">현장이 이토록 즉각적인 타격을 입는 이유는 시멘트 혼합물의 독특한 물리적 특성에 있습니다. 철근이나 모래 같은 자재는 미리 대량으로 매입해 현장에 적재해 둘 수 있지만, 레미콘은 물을 섞는 순간부터 굳어지기 시작하는 <strong>'시한성 자재'</strong>입니다. 제조 후 최소 90분 이내에 타설되지 않으면 강도가 떨어져 전량 폐기해야 하므로 사전 비축이 불가능합니다. 운송 거부가 시작되자마자 골조 공정 전체가 마비되는 이유가 바로 여기에 있습니다.</p>
-        
-        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">3. 내 집 마련 수요자가 마주할 도미노 리스크</h3>
-        <p class="mb-4 text-gray-700 leading-relaxed">원자재 공급망 차질은 결국 최종 소비자인 예비 입주자들에게 경제적 부담으로 전가될 확률이 높습니다.</p>
-        
-        <h4 class="text-lg font-semibold text-gray-800 mt-4 mb-2">① 이사 및 대글 계획의 혼선 (입주 기한 연장)</h4>
-        <p class="mb-4 text-gray-700 leading-relaxed">굳히기 작업이 필요한 층별 타설 공정이 일주일 지연되면, 후속 마감 공정은 한 달 가까이 연쇄 지연될 수 있습니다. 준공일이 미뤄지면 기존 주택의 처분 기한, 전세 보증금 반환, 신규 잔금 대출 실행일 등이 일시에 엉키며 금융 비용 손실을 입을 수 있습니다.</p>
-        
-        <h4 class="text-lg font-semibold text-gray-800 mt-4 mb-2">② 간접 공사비 증가에 따른 차기 분양가 압박</h4>
-        <p class="mb-4 text-gray-700 leading-relaxed">공사 기간이 늘어날수록 현장 감리비, 인건비, 그리고 건설사가 부담해야 하는 프로젝트 파이낸싱(PF) 이자가 급증합니다. 이러한 손실액은 향후 분양을 앞둔 주변 단지들의 공급 가격에 그대로 반영되어 전반적인 분양가 상승을 자극하게 됩니다.</p>
-        
-        <p class="mb-4 text-gray-700 leading-relaxed mt-4 bg-orange-50 p-4 rounded-lg border border-orange-200">
-            <strong>💖 에디터의 눈길:</strong> 경기 둔화 속에서 생존을 유치하려는 차주들과 마진율 저하를 막으려는 기업의 고충이 모두 이해되는 시점입니다. 하지만 갈등의 끝에서 발생하는 비용 부담을 결국 일반 시민들이 짊어지게 되는 만큼, 주거 안정성을 해치지 않도록 정부와 업계의 정교한 중재안 조율이 시급해 보입니다.
-        </p>
-    `
-},
-    {
-    id: 42,
-    category: "finance",
-    categoryKo: "산업 분석",
-    title: "삼성·SK하이닉스 생산거점 분석: 수도권·충청 집중 전략과 해외 리스크",
-    summary: "대한민국 반도체 산업의 심장, 삼성전자와 SK하이닉스의 생산 기지가 왜 수도권과 충청권에 집중되어 있는지, 그리고 글로벌 공급망 속에서 마주한 변수들을 짚어봅니다.",
-    date: "2026-06-13",
-    author: "산업 경제 에디터",
-    readTime: "8분 소요",
-    content: `
-      <p class="mb-4 text-gray-700 leading-relaxed">
-        대한민국 수출의 핵심인 삼성전자와 SK하이닉스의 반도체 생산 거점은 현재 <strong>수도권과 충청권</strong>에 견고하게 자리 잡고 있습니다. 이는 단순한 우연이 아니라 인프라, 인적 자원, 그리고 물류 효율성을 고려한 전략적 선택의 결과입니다.
-      </p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">1. 왜 수도권과 충청인가?</h2>
-      <p class="mb-4 text-gray-700 leading-relaxed">
-        삼성전자의 기흥·화성·평택 캠퍼스와 SK하이닉스의 이천·청주 공장은 반도체 클러스터의 핵심축을 이룹니다. 이 지역들은 다음과 같은 강점을 가지고 있습니다:
-      </p>
-      <ul class="list-disc ml-6 mb-4 text-gray-700">
-        <li><strong>우수한 인프라:</strong> 안정적인 전력 공급과 대규모 용수 확보 용이</li>
-        <li><strong>인적 자원 접근성:</strong> 우수 엔지니어 및 연구 인력 확보 최적지</li>
-        <li><strong>물류 효율성:</strong> 수출을 위한 공항 및 항만과의 최단 거리 연결</li>
-      </ul>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">2. 글로벌 공급망의 변수</h2>
-      <p class="mb-4 text-gray-700 leading-relaxed">
-        하지만 국내 집중형 생산 체제는 글로벌 지정학적 리스크와 마주하고 있습니다. 미국, 중국, 유럽 등 주요국의 '자국 우선주의' 정책으로 인해 해외 생산 기지 다변화가 강력히 요구되는 상황입니다. 
-      </p>
-      <p class="mb-4 text-gray-700 leading-relaxed">
-        앞으로의 과제는 국내 거점의 기술 초격차를 유지하면서도, 급변하는 국제 정세 속에서 얼마나 유연하게 글로벌 생산 네트워크를 재편하느냐에 달려 있습니다.
-      </p>
-    `
-  },
-      {
-    id: 43,
-    category: "finance",
-    categoryKo: "경제 이슈",
-    title: "스페이스X 상장과 동시에 급등... 인류 최초 '조만장자' 머스크의 탄생",
-    summary: "역대 최대 규모로 나스닥에 입성한 스페이스X가 상장 첫날 기록적인 상승세를 보였습니다. 이로 인해 일론 머스크의 자산은 1조 달러를 돌파하며 역사상 최초의 '조만장자' 타이틀을 거머쥐었습니다.",
-    date: "2026-06-13",
-    author: "금융 경제 에디터",
-    readTime: "6분 소요",
-    content: `
-      <p class="mb-4 text-gray-700 leading-relaxed">
-        2026년 6월 12일, 뉴욕 증시는 역대급 이벤트로 뜨거웠습니다. 우주 탐사 기업 <strong>스페이스X(SpaceX, 티커: SPCX)</strong>가 나스닥에 화려하게 데뷔하며 시가총액 2조 1,000억 달러라는 경이로운 기록을 세웠습니다.
-      </p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">1. 역사적인 나스닥 상장</h2>
-      <p class="mb-4 text-gray-700 leading-relaxed">
-        공모가 135달러로 시작한 스페이스X는 상장 첫날 19.41% 급등한 161.20달러에 마감했습니다. 이는 2019년 사우디 아람코의 기록을 갈아치운 사상 최대 규모의 IPO입니다.
-      </p>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div class="p-4 border rounded-lg bg-blue-50">
-          <h3 class="font-bold mb-2">상장 규모</h3>
-          <p class="text-sm text-gray-600">공모가 135달러, 총 조달액 750억 달러 규모의 초대형 IPO</p>
-        </div>
-        <div class="p-4 border rounded-lg bg-blue-50">
-          <h3 class="font-bold mb-2">시장 가치</h3>
-          <p class="text-sm text-gray-600">상장 첫날 종가 기준 시총 2조 1,000억 달러 (미국 6위)</p>
-        </div>
-      </div>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">2. 머스크, 1조 달러 시대의 개막</h2>
-      <p class="mb-4 text-gray-700 leading-relaxed">
-        이번 상장의 가장 큰 수혜자는 단연 일론 머스크입니다. 스페이스X 지분 가치의 폭발적인 상승으로 그의 개인 순자산은 <strong>1조 달러(약 1,300조 원 이상)</strong>를 돌파했습니다. 인류 역사상 개인이 1조 달러 규모의 자산을 보유한 것은 이번이 처음입니다.
-      </p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">3. 단순 우주 기업이 아니다</h2>
-      <blockquote class="border-l-4 border-purple-500 pl-4 py-2 my-6 italic text-gray-600">
-        "스페이스X는 이제 로켓 회사를 넘어, 스타링크를 통한 글로벌 통신망과 xAI의 데이터센터 인프라를 연결하는 핵심 AI 허브로 진화하고 있습니다."
-      </blockquote>
-      <p class="mb-4 text-gray-700 leading-relaxed">
-        전문가들은 이번 상장을 통해 스페이스X가 우주-통신-AI를 아우르는 거대 기술 제국으로서의 입지를 더욱 확고히 했다고 평가하고 있습니다. 향후 이 거대 기업이 글로벌 시장에 미칠 파급력에 귀추가 주목됩니다.
-      </p>
-    `
-  },
- 
-            {
-    id: 44,
-    category: "life",
-    categoryKo: "건강 정보",
-    title: "혈당과 체지방을 동시에 잡는 과일 5가지: 건강한 다이어트의 정석",
-    summary: "혈당 스파이크를 방지하고 체지방 연소를 돕는 똑똑한 과일 섭취법! 매일 챙겨 먹으면 좋은 과일 리스트와 효과를 정리했습니다.",
-    date: "2026-06-13",
-    author: "헬스 트레이너 에디터",
-    readTime: "6분 소요",
-    content: `
-      <p class="mb-4 text-gray-700 leading-relaxed">
-        다이어트 중 가장 고민되는 것이 바로 '과일'입니다. 당분이 많아 혈당을 올릴까 걱정되지만, 잘 선택하면 오히려 체지방 감소와 혈당 관리에 큰 도움을 받을 수 있습니다. 오늘은 <strong>혈당 관리와 다이어트</strong>에 효과적인 과일 5가지를 소개합니다.
-      </p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">1. 건강한 과일 TOP 5</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div class="p-4 border rounded-lg bg-gray-50">
-          <h3 class="font-bold mb-2">아보카도</h3>
-          <p class="text-sm text-gray-600">식이섬유가 풍부해 당 흡수를 늦추고, 인슐린 민감도를 개선합니다.</p>
-        </div>
-        <div class="p-4 border rounded-lg bg-gray-50">
-          <h3 class="font-bold mb-2">블루베리</h3>
-          <p class="text-sm text-gray-600">안토시아닌이 장내 당 흡수를 억제하고 체지방 연소를 돕습니다.</p>
-        </div>
-        <div class="p-4 border rounded-lg bg-gray-50">
-          <h3 class="font-bold mb-2">토마토</h3>
-          <p class="text-sm text-gray-600">GI(혈당지수)가 매우 낮고 라이코펜이 풍부해 심혈관 건강에 좋습니다.</p>
-        </div>
-        <div class="p-4 border rounded-lg bg-gray-50">
-          <h3 class="font-bold mb-2">자몽</h3>
-          <p class="text-sm text-gray-600">나린진 성분이 인슐린 저항성을 개선하여 대사를 촉진합니다.</p>
-        </div>
-        <div class="p-4 border rounded-lg bg-gray-50">
-          <h3 class="font-bold mb-2">사과</h3>
-          <p class="text-sm text-gray-600">풍부한 펙틴과 식이섬유가 포만감을 주고 당 흡수를 조절합니다.</p>
-        </div>
-      </div>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">2. 더 건강하게 먹는 꿀팁</h2>
-      <ul class="list-disc ml-6 mb-4 text-gray-700">
-        <li><strong>단독 섭취 지양:</strong> 과일만 먹기보다 견과류(지방), 치즈(단백질)와 곁들여 혈당 상승을 완만하게 하세요.</li>
-        <li><strong>주스보다는 생으로:</strong> 착즙 주스는 식이섬유가 파괴되고 혈당을 빠르게 올리므로 반드시 생과일 형태로 씹어서 드시는 것이 좋습니다.</li>
-        <li><strong>섭취 시간:</strong> 식후보다는 식간에 소량씩 즐기거나, 식후 혈당 조절을 위해 식사와 함께 조금씩 곁들이는 것도 방법입니다.</li>
-      </ul>
-
-      <blockquote class="border-l-4 border-green-500 pl-4 py-2 my-6 italic text-gray-600">
-        "과일의 당분은 자연스러운 에너지원이지만, 핵심은 <strong>'적정량'</strong>입니다. 하루 한 줌(약 100~150g) 정도의 양을 꾸준히 섭취하는 습관이 혈당과 체지방 관리에 가장 효과적입니다."
-      </blockquote>
-    `
-  },
-            {
-  id: 45,
-  category: "life",
-  categoryKo: "건강 정보",
-  title: "일본뇌염 경보 한 달 빨라졌다…질병관리청 6월 발령 대응법",
-  summary: "올해 빨라진 일본뇌염 경보! 증상부터 예방 수칙, 백신 접종 가이드까지 건강한 여름을 위한 핵심 정보를 정리했습니다.",
-  date: "2026-06-21",
-  author: "IT 기술 블로그 에디터",
-  readTime: "6분 소요",
-  content: `
-    <p class="mb-4 text-gray-700 leading-relaxed">
-      최근 기온이 급격히 상승하면서 모기의 활동이 눈에 띄게 활발해졌습니다. 특히 올해는 일본뇌염 경보가 예년보다 한 달가량 빠르게 발령되어 많은 분들이 불안함을 느끼고 계실 텐데요. "아직 여름이 시작된 것 같은데 벌써 주의보도 아니고 경보라고?"라는 생각에 당황하셨을 수도 있습니다.
-    </p>
-    
-    <p class="mb-4 text-gray-700 leading-relaxed">
-      일본뇌염은 매개 모기에 물려 감염되는 바이러스성 질환으로, 자칫 잘못하면 치명적인 뇌염으로 진행될 수 있는 무서운 질병입니다. 하지만 너무 걱정하지 마세요. 올바른 지식을 갖추고 적절한 예방 수칙만 지킨다면 충분히 방어할 수 있습니다. 오늘은 질병관리청의 최신 발표를 토대로 우리가 반드시 알아야 할 일본뇌염 대응법을 꼼꼼하게 살펴보겠습니다.
-    </p>
-
-    <h2 class="text-2xl font-bold mt-8 mb-4">1. 일본뇌염이란 무엇인가?</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">
-      <strong>일본뇌염</strong>은 일본뇌염 바이러스를 가진 '작은빨간집모기'가 사람을 무는 과정에서 감염되는 급성 바이러스성 전염병입니다. 이 모기는 논이나 동물 축사, 웅덩이 등에서 주로 서식하며, 주로 6월부터 10월까지 왕성하게 활동합니다.
-    </p>
-
-    <h2 class="text-2xl font-bold mt-8 mb-4">2. 올해 경보가 빨라진 이유와 위험성</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">
-      질병관리청에 따르면 올해 일본뇌염 경보가 예년보다 한 달 빠르게 발령된 주된 원인은 <strong>지구 온난화로 인한 기온 상승</strong>입니다. 따뜻해진 날씨 덕분에 모기의 번식 속도가 빨라지고 활동 시기가 앞당겨진 것입니다.
-    </p>
-    <blockquote class="border-l-4 border-gray-500 pl-4 py-2 italic text-gray-600 mb-4">
-      주의: 경보 발령은 매개 모기 밀도가 급격히 높아졌음을 의미합니다. 단순히 모기를 피하는 수준을 넘어, 방역과 백신 접종 등 적극적인 예방 전략이 필요한 시점입니다.
-    </blockquote>
-
-    <h2 class="text-2xl font-bold mt-8 mb-4">3. 실생활 필수 예방 수칙 5가지</h2>
-    <ul class="list-disc pl-6 mb-4 text-gray-700">
-      <li class="mb-2"><strong>야간 활동 자제:</strong> 모기가 활발히 활동하는 오후 8시부터 오전 10시까지 야외 활동 자제.</li>
-      <li class="mb-2"><strong>노출 최소화:</strong> 밝은색의 긴 소매 옷과 긴 바지 착용.</li>
-      <li class="mb-2"><strong>기피제 사용:</strong> 식약처 승인 모기 기피제 활용.</li>
-      <li class="mb-2"><strong>주변 정비:</strong> 집 주변 물웅덩이, 배수구 청소.</li>
-      <li class="mb-2"><strong>방충망 점검:</strong> 방충망 보수 및 모기장 사용.</li>
-    </ul>
-
-    <h2 class="text-2xl font-bold mt-8 mb-4">4. 요약 정리</h2>
-    <table class="min-w-full border-collapse border border-gray-300 mb-4">
-      <thead>
-        <tr class="bg-gray-100">
-          <th class="border p-2">구분</th>
-          <th class="border p-2">주요 내용</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td class="border p-2">발병 원인</td><td class="border p-2">작은빨간집모기</td></tr>
-        <tr><td class="border p-2">위험 요인</td><td class="border p-2">기온 상승</td></tr>
-        <tr><td class="border p-2">핵심 예방</td><td class="border p-2">야간활동 자제 및 백신</td></tr>
-      </tbody>
-    </table>
-
-    <h2 class="text-2xl font-bold mt-8 mb-4">결론</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">
-      오늘 알려드린 예방 수칙을 생활화하여 안전한 여름을 보내시길 바랍니다. 건강을 지키는 작은 실천이 무엇보다 중요합니다. 더 궁금한 점이 있으시면 언제든 문의해 주세요!
-    </p>
-      `
-},
-            {
-  id: 46,
-  category: "life",
-  categoryKo: "건강 정보",
-  title: "“염증 줄인다” 의외로 몸에 좋다는 '이 간식', 뭐지?",
-  summary: "만성 염증을 효과적으로 줄여주는 의외의 건강 간식 리스트! 똑똑하게 먹고 체내 염증 수치를 낮추는 식습관 가이드를 확인하세요.",
-  date: "2026-06-21",
-  author: "헬스 트레이너 에디터",
-  readTime: "5분 소요",
-  content: `
-    <p class="mb-4 text-gray-700 leading-relaxed">
-      평소 무심코 먹던 간식이 체내 염증을 줄이는 데 놀라운 효과가 있다는 사실을 알고 계신가요? <strong>만성 염증</strong>은 각종 성인병과 피로의 주범입니다. 하지만 제대로 고른 간식은 오히려 우리 몸의 염증 수치를 낮추고 신진대사를 돕는 보약이 될 수 있습니다.
-    </p>
-
-    <h2 class="text-2xl font-bold mt-8 mb-4">1. 만성 염증, 왜 위험할까?</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">
-      우리 몸은 외부 침입자로부터 보호하기 위해 염증 반응을 일으킵니다. 하지만 이 반응이 사라지지 않고 몸속에 남는 '만성 염증' 상태가 되면 세포를 손상시키고 심혈관 질환, 대사 증후군의 원인이 됩니다.
-    </p>
-
-    <h2 class="text-2xl font-bold mt-8 mb-4">2. 의외로 염증을 줄여주는 '이 간식'</h2>
-    <div class="mb-8 border border-gray-300 rounded-lg p-4 bg-gray-50 flex flex-col items-center">
-      <img src="path/to/your/healthy-snack.jpg" alt="" />
-      <p class="text-sm text-gray-600">염증 완화에 도움을 주는 견과류와 신선한 베리류</p>
-    </div>
-    <ul class="list-disc pl-6 mb-4 text-gray-700">
-      <li class="mb-2"><strong>견과류(아몬드, 호두):</strong> 오메가-3 지방산이 풍부해 혈관 내 염증을 억제합니다.</li>
-      <li class="mb-2"><strong>베리류(블루베리, 딸기):</strong> 강력한 항산화 성분인 안토시아닌이 세포 손상을 방지합니다.</li>
-    </ul>
-
-    <h2 class="text-2xl font-bold mt-8 mb-4">3. 똑똑한 섭취 가이드</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">
-      효과를 극대화하려면 <strong>가공되지 않은 원물 그대로</strong> 섭취해야 합니다. 설탕이나 소금이 코팅된 견과류는 오히려 염증을 유발할 수 있으니 주의하세요. 하루 한 줌 정도가 적당합니다.
-    </p>
-
-    <h2 class="text-2xl font-bold mt-8 mb-4">4. </h2>
-    <blockquote class="border-l-4 border-gray-500 pl-4 py-2 italic text-gray-600 mb-4">
-    </blockquote>
-
-    <h2 class="text-2xl font-bold mt-8 mb-4">결론</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">
-      자극적인 과자 대신 오늘부터 항염증 간식으로 건강한 식습관을 시작해 보세요. 작은 변화가 여러분의 몸을 바꿉니다!
-    </p>
-    `
-},
-            {
-    id: 47,
-    category: "life",
-    categoryKo: "건강정보",
-    title: "브로콜리보다 많다… 의외로 식이섬유 많은 음식 5가지",
-    summary: "건강을 위해 챙겨 먹는 브로콜리! 하지만 사실 브로콜리보다 더 많은 식이섬유를 함유한 의외의 식재료들이 있습니다. 변비 예방과 다이어트에 필수적인 식이섬유 풍부한 음식을 소개합니다.",
-    date: "2026-06-21",
-    author: "영양사 에디터",
-    readTime: "5분 소요",
-    content: `
-      <p class="mb-4 text-gray-700 leading-relaxed">
-        식이섬유는 소화 건강을 돕고, 혈당을 조절하며, 포만감을 오래 유지해 다이어트에도 큰 도움을 줍니다. 많은 분들이 식이섬유 하면 가장 먼저 '브로콜리'를 떠올리지만, 우리 주변에는 이를 훌쩍 뛰어넘는 영양 보물들이 숨어 있습니다. 오늘은 일상 속에서 간편하게 섭취할 수 있는 식이섬유 끝판왕 식품 5가지를 알아봅니다.
-      </p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">1. 렌틸콩 (Lentils)</h2>
-      <p class="mb-4 text-gray-700 leading-relaxed">
-        렌틸콩은 '슈퍼푸드'라는 명성에 걸맞게 식이섬유 함량이 매우 높습니다. 조리된 렌틸콩 한 컵에는 약 15g의 식이섬유가 들어 있어, 브로콜리보다 훨씬 압도적인 수치를 자랑합니다. 샐러드나 카레에 넣어 먹기 좋습니다.
-      </p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">2. 병아리콩 (Chickpeas)</h2>
-      <p class="mb-4 text-gray-700 leading-relaxed">
-        고소한 맛이 일품인 병아리콩은 식이섬유뿐만 아니라 단백질까지 풍부합니다. 한 컵당 약 12g의 식이섬유가 들어있어 장 건강과 근육 생성 모두를 챙길 수 있는 최고의 식재료입니다.
-      </p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">3. 라즈베리 (Raspberries)</h2>
-      <p class="mb-4 text-gray-700 leading-relaxed">
-        과일 중에서는 단연 돋보이는 식이섬유 함량을 자랑합니다. 한 컵당 약 8g의 식이섬유가 포함되어 있어, 간식으로 섭취 시 포만감을 높이고 당분 섭취를 줄이는 데 효과적입니다.
-      </p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">4. 아보카도 (Avocados)</h2>
-      <p class="mb-4 text-gray-700 leading-relaxed">
-        '숲속의 버터'라고 불리는 아보카도는 불포화지방산뿐만 아니라 식이섬유도 매우 풍부합니다. 아보카도 하나에는 약 10g 이상의 식이섬유가 들어있어 샌드위치나 샐러드에 곁들이면 아주 훌륭한 영양 급원이 됩니다.
-      </p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">5. 치아씨드 (Chia Seeds)</h2>
-      <p class="mb-4 text-gray-700 leading-relaxed">
-        작지만 강한 치아씨드는 숟가락 두 개 분량에 약 10g의 식이섬유가 들어있습니다. 요거트나 스무디에 넣어 먹으면 적은 양으로도 충분한 양의 식이섬유를 섭취할 수 있어 매우 효율적입니다.
-      </p>
-
-      <div class="bg-blue-50 p-4 rounded-lg mt-8">
-        <p class="text-blue-800 font-semibold">💡 에디터의 한마디</p>
-        <p class="text-blue-700">식이섬유를 섭취할 때는 반드시 <strong>충분한 수분 섭취</strong>가 병행되어야 합니다. 물을 적게 마시면 오히려 변비가 생길 수 있으니 꼭 기억하세요!</p>
-      </div>
-    `
-  },
-            {
-  id: 48,
-  category: "life",
-  categoryKo: "건강정보",
-  title: "\"연골 지키려면 꾸준히 먹어라\" 정형외과 의사가 꼽은 음식, 뭐지?",
-  summary: "관절 사이 충격을 흡수하는 연골, 한 번 손상되면 재생이 어렵습니다. 정형외과 전문의가 직접 꼽은 연골 건강에 좋은 음식들을 확인해보세요.",
-  date: "2026-06-21",
-  author: "건강 에디터",
-  readTime: "5분 소요",
-  content: `
-    <p class="mb-4 text-gray-700 leading-relaxed">
-      정형외과 전문의 카를 필립 쿠츠너 박사는 "관절 조직은 지속적으로 재생되는 살아 있는 구조"라며 "적절한 영양 공급이 장기적으로 관절 건강 유지에 중요하다"고 말했습니다. 연골은 직접적인 혈액 공급 없이 관절액을 통해 영양소를 전달받기 때문에, 무엇을 먹느냐가 연골 상태에 직접적인 영향을 미칩니다.
-    </p>
-
-    <h2 class="text-2xl font-bold mt-8 mb-4">1. 등 푸른 생선 — 오메가-3 지방산</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">
-      연어, 고등어, 멸치, 정어리 등 지방이 풍부한 생선은 오메가-3 지방산의 최고 공급원입니다. 오메가-3는 염증 유발 화합물인 사이토카인과 에이코사노이드의 생성을 억제하며, 『정형외과 수술 및 연구 저널』 연구에 따르면 골관절염으로 인한 통증 완화에도 효과적인 것으로 확인됐습니다.
-    </p>
-
-    <h2 class="text-2xl font-bold mt-8 mb-4">2. 호두 — 식물성 오메가-3</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">
-      생선을 자주 먹기 어렵다면 호두가 훌륭한 대안입니다. 호두에 담긴 오메가-3는 염증을 줄이는 데 도움이 되며, 『식품 생화학 저널』에 발표된 연구에 따르면 관절염 관련 지표 수치를 낮추고 뼈 파괴와 관련된 유전자 활성을 늦추는 것으로 확인됐습니다.
-    </p>
-
-    <h2 class="text-2xl font-bold mt-8 mb-4">3. 콩류 — 연골 재건을 위한 단백질</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">
-      연골의 주요 구성 성분은 콜라겐을 비롯한 단백질입니다. 콩류는 항염증 효과가 뛰어나며, 콜라겐 재건에 필요한 단백질과 연골 재생에 중요한 아미노산인 라이신을 풍부하게 함유하고 있습니다. 렌틸콩, 병아리콩, 두부, 완두콩 등 다양하게 활용해보세요.
-    </p>
-
-    <h2 class="text-2xl font-bold mt-8 mb-4">4. 감귤류 & 베리류 — 비타민C로 콜라겐 합성</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">
-      비타민C는 콜라겐 합성에 필수적인 영양소입니다. 오렌지, 키위, 딸기, 라즈베리 등의 과일과 붉은 피망, 브로콜리 등의 채소에 풍부하게 들어 있습니다. 비타민C는 콜라겐 형성뿐만 아니라 세포 치유도 촉진해 연골 재생과 보호에 이중으로 도움을 줍니다.
-    </p>
-
-    <h2 class="text-2xl font-bold mt-8 mb-4">5. 케일 & 시금치 — 비타민K로 연골 유지</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">
-      케일, 시금치 같은 녹색 잎채소에는 비타민K가 풍부합니다. 비타민K는 건강한 연골을 유지하고 골관절염 진행을 늦추는 데 도움을 줍니다. 케일을 올리브 오일과 함께 버무려 먹으면 항산화 효과까지 더해져 관절 건강에 시너지를 낼 수 있습니다.
-    </p>
-
-    <h2 class="text-2xl font-bold mt-8 mb-4">6. 엑스트라 버진 올리브오일 — 폴리페놀로 염증 억제</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">
-      엑스트라 버진 올리브 오일에는 항산화 성분인 폴리페놀이 풍부합니다. 폴리페놀은 COX 효소 활성을 억제해 관절 통증 완화에 도움이 됩니다. 샐러드 드레싱이나 채소 볶음에 활용하면 맛과 건강을 함께 챙길 수 있습니다.
-    </p>
-
-    <h2 class="text-2xl font-bold mt-8 mb-4">7. 녹차 & 석류 — 연골 보호 항산화 성분</h2>
-    <p class="mb-4 text-gray-700 leading-relaxed">
-      녹차에 함유된 카테킨과 폴리페놀은 연골 재생과 퇴행성관절염 완화에 도움이 됩니다. 석류는 항산화·항염증 성분이 풍부해 연골을 보호하는 물질 생산을 돕습니다. 석류를 호두 등 견과류와 함께 먹으면 효과가 더욱 좋습니다.
-    </p>
-
-    <div class="bg-blue-50 p-4 rounded-lg mt-8">
-      <p class="text-blue-800 font-semibold">💡 에디터의 한마디</p>
-      <p class="text-blue-700">
-        쿠츠너 박사는 "특정 식품 하나에 의존하기보다는 <strong>가공을 최소화한 균형 잡힌 식단을 꾸준히 유지</strong>하는 것이 중요하다"고 강조합니다. 또한 체중이 증가할수록 무릎·고관절·척추에 가해지는 부담이 커지므로, 적정 체중 유지도 연골 건강의 핵심입니다.
-      </p>
-    </div>
-    `
-},
-            {
-    id: 49,
-    category: "life",
-    categoryKo: "건강정보",
-    title: "“치아에 독” 치과 의사 절대 안 먹는다는 간식 5가지",
-    summary: "우리가 무심코 즐겨 먹는 간식 중 치아 건강을 위협하는 것들이 있습니다. 치과 의사들이 절대로 피한다는 대표적인 간식 5가지를 소개합니다.",
-    date: "2026-06-21",
-    author: "치과 전문 에디터",
-    readTime: "5분 소요",
-    content: `
-      <p class="mb-4 text-gray-700 leading-relaxed">
-        치아 건강은 한번 잃으면 되돌리기 어렵습니다. 특히 일상 속에서 즐기는 간식 습관이 치아를 서서히 망가뜨리고 있다는 사실, 알고 계셨나요? 오늘은 많은 사람들이 즐기지만 치과 의사들은 절대 멀리한다는 간식 5가지를 정리해 드립니다.
-      </p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">1. 말린 과일 (건조 과일)</h2>
-      <p class="mb-4 text-gray-700">
-        과일 자체는 건강에 좋지만, 말린 과일은 이야기가 다릅니다. 수분이 빠지면서 당도가 농축되어 있고, 끈적끈적한 질감 때문에 치아 표면에 달라붙어 떨어지지 않습니다. 이는 세균이 번식하기 딱 좋은 환경을 만들어 충치를 유발합니다.
-      </p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">2. 탄산음료 및 스포츠 음료</h2>
-      <p class="mb-4 text-gray-700">
-        설탕 함유량도 문제지만, 더 위험한 것은 '산성도'입니다. 산 성분은 치아의 가장 겉면인 법랑질을 부식시켜 치아를 약하게 만듭니다. 특히 얼음을 넣고 천천히 마시는 습관은 치아를 산성 환경에 더 오래 노출시킵니다.
-      </p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">3. 젤리 및 캐러멜</h2>
-      <p class="mb-4 text-gray-700">
-        치아 건강의 '최악'으로 꼽힙니다. 씹는 과정에서 치아의 홈 사이사이에 끼어 오랫동안 잔류하며, 침으로도 잘 씻겨 내려가지 않습니다. 치아 사이에 박힌 젤리는 당분이 치아를 공격하는 시간을 극대화합니다.
-      </p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">4. 딱딱한 사탕</h2>
-      <p class="mb-4 text-gray-700">
-        사탕을 깨물어 먹다가 치아가 파절되는 사례가 매우 많습니다. 또한, 입안에서 천천히 녹여 먹는 동안 치아는 끊임없이 당분에 노출됩니다. 입안을 당분 범벅으로 만드는 가장 확실한 방법입니다.
-      </p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">5. 크래커 및 과자류</h2>
-      <p class="mb-4 text-gray-700">
-        단맛이 없어서 괜찮다고 생각하시나요? 정제 탄수화물인 과자는 침과 섞이면 점성이 강해져 치아 사이에 달라붙습니다. 침 속의 효소에 의해 분해되면서 결국 당분으로 변해 충치균의 먹이가 됩니다.
-      </p>
-
-      <div class="bg-blue-50 p-6 rounded-lg mt-8">
-        <h3 class="font-bold text-lg mb-2">💡 치아를 지키는 작은 습관</h3>
-        <p class="text-gray-700">
-          간식을 끊기 어렵다면, 먹은 직후 물로 입을 헹구거나 가급적 즉시 양치를 하는 습관을 들이세요. 치아 건강은 예방이 최고의 치료입니다.
-        </p>
-      </div>
-    `
-  },
-            {
-    id: 50,
-    category: "life",
-    categoryKo: "건강정보",
-    title: "익혀서 먹으면 암 예방에 탁월…“이거 먹으면 병원 안와” 의사가 싫어한다는 이 음식은?",
-    summary: "특정 조리법으로 먹었을 때 항암 효과가 극대화되는 '슈퍼 푸드'가 있습니다. 의사들이 입을 모아 칭찬하는 이 음식의 놀라운 효능을 확인해보세요.",
-    date: "2026-06-21",
-    author: "건강 정보 에디터",
-    readTime: "6분 소요",
-    content: `
-      <p class="mb-4 text-gray-700 leading-relaxed">
-        "이것만 잘 챙겨 먹어도 병원 갈 일이 줄어든다"는 말이 있습니다. 바로 우리 식탁에서 흔히 볼 수 있는 <strong>'토마토'</strong> 이야기입니다. 특히 생으로 먹는 것보다 '익혀서' 먹을 때 그 진가가 드러난다는 사실, 알고 계셨나요?
-      </p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">1. 왜 '익혀야' 암 예방에 좋을까?</h2>
-      <p class="mb-4 text-gray-700">
-        토마토의 핵심 성분인 <strong>'라이코펜(Lycopene)'</strong> 때문입니다. 라이코펜은 강력한 항산화 물질로, 우리 몸의 세포를 손상시키는 활성산소를 억제하여 암을 예방하고 혈관을 튼튼하게 합니다. 토마토를 가열하면 세포벽이 파괴되면서 라이코펜이 밖으로 더 많이 빠져나와 체내 흡수율이 비약적으로 높아집니다.
-      </p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">2. 더 효과적으로 먹는 '꿀팁'</h2>
-      <p class="mb-4 text-gray-700">
-        라이코펜은 지용성 영양소입니다. 즉, <strong>기름과 함께 조리할 때 흡수율이 더욱 극대화</strong>됩니다. 올리브유와 함께 살짝 볶거나 끓여서 드시면 생토마토를 먹을 때보다 영양 흡수 효율을 수배 이상 높일 수 있습니다.
-      </p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">3. 어떤 암에 특히 효과적일까?</h2>
-      <p class="mb-4 text-gray-700">
-        수많은 연구 결과, 토마토의 라이코펜은 특히 <strong>전립선암, 폐암, 위암</strong> 예방에 탁월한 효능을 보이는 것으로 밝혀졌습니다. 매일 꾸준히 섭취하는 것만으로도 암 발생 위험을 유의미하게 낮출 수 있습니다.
-      </p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">4. 의사가 강조하는 섭취 주의사항</h2>
-      <p class="mb-4 text-gray-700">
-        아무리 좋은 음식이라도 과유불급입니다. 위장이 예민한 분들은 산도가 높은 토마토를 너무 많이 먹으면 속쓰림을 느낄 수 있습니다. 또한, 토마토 통조림 제품의 경우 과도한 당분이나 염분이 첨가되어 있을 수 있으니 성분표를 꼼꼼히 확인하는 것이 좋습니다.
-      </p>
-
-      <div class="bg-green-50 p-6 rounded-lg mt-8">
-        <h3 class="font-bold text-lg mb-2">🥗 오늘 저녁, 토마토 올리브 볶음 어떠세요?</h3>
-        <p class="text-gray-700">
-          올리브유에 마늘과 토마토를 살짝 볶아내기만 해도 훌륭한 항암 요리가 됩니다. 오늘부터 식탁에 작은 변화를 주어 건강을 지켜보세요!
-        </p>
-      </div>
-        `
-  },
-            {
-    id: 51,
-    category: "life",
-    categoryKo: "건강정보",
-    title: "염증 잡고 노화 방지에 1등 보약, 포도의 놀라운 효능과 올바른 섭취법",
-    summary: "만성 염증으로 고생하고 계신가요? 맛있는 포도가 몸속 염증을 제거하고 활력을 되찾아주는 '천연 항염제' 역할을 한다는 사실, 알고 계셨나요?",
-    date: "2026-06-21",
-    author: "건강 정보 에디터",
-    readTime: "5분 소요",
-    thumbnail: "images/식단_002.png",
-    content: `
-      <p class="mb-4 text-gray-700 leading-relaxed">
-        우리 몸의 질병 대부분은 '만성 염증'에서 시작됩니다. 최근 많은 전문가들이 주목하는 천연 항염 식품 중 하나가 바로 <strong>'포도'</strong>입니다. 달콤한 맛 뒤에 숨겨진 포도의 강력한 항염 효과에 대해 자세히 알아보겠습니다.
-      </p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">1. 포도가 염증을 잡는 이유: 레스베라트롤</h2>
-      <p class="mb-4 text-gray-700">
-        포도의 껍질과 씨에는 <strong>'레스베라트롤(Resveratrol)'</strong>이라는 성분이 풍부합니다. 이 물질은 강력한 폴리페놀의 일종으로, 체내 염증 반응을 억제하고 세포의 산화를 막아주는 핵심 항산화제입니다.
-      </p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">2. 포도의 놀라운 3가지 건강 효능</h2>
-      <ul class="list-disc ml-6 mb-4 text-gray-700">
-        <li><strong>혈관 건강 개선:</strong> 혈전 생성을 막고 혈류를 원활하게 하여 심혈관 질환 예방에 도움을 줍니다.</li>
-        <li><strong>면역력 강화:</strong> 비타민과 무기질이 풍부하여 피로 회복은 물론 외부 바이러스로부터 몸을 보호합니다.</li>
-        <li><strong>피부 노화 방지:</strong> 활성산소를 제거해 세포 재생을 돕고 건강한 피부 탄력을 유지해줍니다.</li>
-      </ul>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">3. 의사가 권장하는 '껍질째 먹는 법'</h2>
-      <p class="mb-4 text-gray-700">
-        많은 분이 포도 껍질을 뱉어내시지만, 사실 <strong>영양분의 핵심은 껍질과 씨</strong>에 집중되어 있습니다. 포도의 효능을 100% 누리려면 껍질째 깨끗이 씻어 드시는 것이 가장 좋습니다. 잔류 농약이 걱정된다면 베이킹소다를 푼 물에 잠시 담갔다가 흐르는 물에 충분히 씻어내세요.
-      </p>
-
-      <h2 class="text-2xl font-bold mt-8 mb-4">4. 섭취 시 주의사항</h2>
-      <p class="mb-4 text-gray-700">
-        포도는 당도가 높은 과일입니다. 당뇨가 있으시거나 혈당 관리가 필요한 분들은 과다 섭취를 피하고, 하루 권장량(한 송이의 1/3~1/2 정도)을 지키는 것이 중요합니다.
-      </p>
-
-      <div class="bg-purple-50 p-6 rounded-lg mt-8">
-        <h3 class="font-bold text-lg mb-2"> 오늘부터 포도 한 송이로 항염 관리!</h3>
-        <p class="text-gray-700">
-          제철 포도는 맛도 좋고 영양도 가득합니다. 오늘 간식으로는 가공된 과자 대신 신선한 포도를 껍질째 드셔보는 건 어떨까요?
-        </p>
-      </div>
-   `
-  }
-            
-            
-         ];
+}
+        ];
 
         // ╔══════════════════════════════════════════════════════════════════════════╗
         // ║  ✅  글쓰는 구간 끝  (DATA END)                                         ║
@@ -2358,32 +1821,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         // ║  ⚠️  이 아래는 수정하지 마세요.                                          ║
         // ╚══════════════════════════════════════════════════════════════════════════╝
 
-// 포스트 목록 렌더링 (category=null 이면 전체)
-// 수정: 함수 선언 끝의 세미콜론 제거
-function renderPosts(category) {
-    const container = document.getElementById('posts-container');
-    if (!container) return;
 
-    const filtered = category
-        ? blogPosts.filter(p => p.category === category)
-        : blogPosts;
+        function shareToX(id) {
+            const post = blogPosts.find(p => p.id === id);
+            if (!post) return;
+            const params = new URLSearchParams({
+                text: post.title,
+                url: window.location.href,
+            });
+            window.open('https://x.com/intent/tweet?' + params.toString(), '_blank', 'width=600,height=450');
+        }
 
-    // 카테고리 타이틀 (전체일 때만 "최신 정보 포스트"로 복원)
-    const titleEl = document.getElementById('category-title');
-    if (!category && titleEl) titleEl.innerText = '최신 정보 포스트';
+       function showPage(pageId) {
+            document.querySelectorAll('.page-content').forEach(p => p.classList.add('hidden'));
+            const targetPage = document.getElementById('page-' + pageId);
+            if(targetPage) {
+                targetPage.classList.remove('hidden');
+            }
+            window.scrollTo(0,0);
+        }
 
-    container.innerHTML = '';
-    if (filtered.length === 0) {
-        container.innerHTML = '<p class="col-span-2 text-center text-gray-400 py-12">해당 카테고리의 포스트가 없습니다.</p>';
-        return;
-    }
-    
-    // 이후 포스트 렌더링 로직 (map 등)이 여기에 추가되어야 합니다.
-    // 현재 코드에서는 여기서 함수가 종료되므로, 
-    // 실제 HTML을 생성하는 코드를 이 아래에 작성하세요.
-}
+        // 카테고리 필터링 기능 (동적 구현용 설계 기본값)
+        function filterCategory(category) {
+            showPage('home');
+            const titleEl = document.getElementById('category-title');
+            if(category === 'tech') titleEl.innerText = "생활정보 ";
+            if(category === 'life') titleEl.innerText = "건강정보";
+            if(category === 'finance') titleEl.innerText = "경제정보 ";
+        }
 
-            filtered.forEach(post => {
+        // 포스트 목록 초기 동적 출력 처리
+        function renderPosts() {
+            const container = document.getElementById('posts-container');
+            if(!container) return;
+            container.innerHTML = "";
+            
+            blogPosts.forEach(post => {
                 container.innerHTML += `
                     <div onclick="viewDetail(${post.id})" class="bg-white rounded-xl p-4 md:p-5 shadow-sm border border-gray-100 hover:shadow-md transition cursor-pointer flex flex-col justify-between">
                         <div>
@@ -2397,22 +1870,6 @@ function renderPosts(category) {
                         </div>
                     </div>
                 `;
-            });
-
-            // 사이드바 카테고리 카운트 동적 업데이트
-            updateSidebarCounts();
-        }
-
-        // 사이드바 카운트 자동 업데이트
-        function updateSidebarCounts() {
-            const countMap = { tech: 0, life: 0, finance: 0 };
-            blogPosts.forEach(p => { if (countMap[p.category] !== undefined) countMap[p.category]++; });
-            const sidebarBtns = document.querySelectorAll('aside button[onclick*="filterCategory"]');
-            const catOrder = ['tech', 'life', 'finance'];
-            sidebarBtns.forEach((btn, i) => {
-                const cat = catOrder[i];
-                const badge = btn.querySelector('span.bg-gray-100');
-                if (badge && cat) badge.textContent = countMap[cat];
             });
         }
 
@@ -2483,8 +1940,7 @@ function renderPosts(category) {
 
         // 실행
         window.onload = function() {
-            renderPosts(null);
-            updateSidebarCounts();
+            renderPosts();
         };
     </script>
     <a href="https://hits.seeyoufarm.com">
