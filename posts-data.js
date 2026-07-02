@@ -1,6 +1,7 @@
 
 
-        const blogPosts = [
+
+const blogPosts = [
 
    
             {
