@@ -2299,7 +2299,108 @@
         <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">3. 교육 단체 및 장소 선택 팁</h3>
         <p class="mb-4 text-gray-700 leading-relaxed">전 세계적으로 통용되는 대표적인 다이빙 단체로는 PADI, NAUI, SSI, CMAS 등이 있습니다. 단체 간의 자격은 서로 호환되므로, 단체보다는 <strong>경험이 풍부하고 안전을 최우선으로 하는 강사나 다이브 센터</strong>를 선택하는 것이 훨씬 중요합니다. 국내 수영장에서 이론과 실습을 마친 뒤 동해나 제주도에서 바다 실습을 하거나, 동남아(필리핀, 태국 등)의 다이빙 리조트에서 여행을 겸해 전 과정을 단기로 이수하는 방법 중 본인의 일정에 맞는 방식을 선택해 보세요.</p>
     `
+},
+{
+    "id": 62,
+    "category": "finance",
+    "categoryKo": "금융·재정",
+    "title": "2026년 청년 월세 특별지원 총정리! 상시 전환 및 조건 완화",
+    "summary": "매달 20만 원씩 최대 24개월간 지원받는 청년 월세 특별지원! 2026년부터 상시 제도로 전환되며 달라진 신청 조건과 자격, 구비 서류를 확인하세요.",
+    "date": "2026-07-05",
+    "author": "정부정책 에디터",
+    "readTime": "4분 소요",
+    "content": `
+        <p class="mb-4 text-gray-700 leading-relaxed">자취하는 청년들의 가장 큰 고정 지출 중 하나가 바로 월세입니다. 국토교통부에서는 청년층의 주거비 부담을 덜어주기 위해 매월 최대 20만 원씩 지원하는 <strong>'청년 월세 한시 특별지원'</strong> 사업을 운영해 왔는데요, 2026년부터는 한시적 운영이 아닌 <strong>상시 신청 제도</strong>로 전환되어 혜택이 더욱 확대되었습니다. 또한 기존의 필수 조건이었던 청약통장 가입 요건도 폐지되어 문턱이 낮아졌습니다.</p>
+        
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">1. 2026년 주요 변경 사항</h3>
+        <p class="mb-2 text-gray-700 leading-relaxed">올해부터 청년 월세 지원은 청년들의 편의를 높이는 방향으로 크게 개편되었습니다.</p>
+        <ul class="list-disc list-inside mb-4 text-gray-700 leading-relaxed pl-2">
+            <li class="mb-1"><strong>지원 기간 확대:</strong> 기존 최대 12개월 지급에서 <strong>최대 24개월(총 480만 원)</strong>로 지급 기간이 두 배 늘어났습니다.</li>
+            <li class="mb-1"><strong>상시 신청 전환:</strong> 특정 기간에만 받던 한시적 접수에서 연중 상시 신청할 수 있도록 변경되었습니다.</li>
+            <li class="mb-1"><strong>청약통장 조건 폐지:</strong> 기존에 필수였던 청약통장 가입 여부를 더 이상 확인하지 않아 조건이 완화되었습니다.</li>
+        </ul>
+        
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">2. 지원 대상 및 자격 조건</h3>
+        <p class="mb-2 text-gray-700 leading-relaxed">신청일 기준 <strong>만 19세 ~ 34세 이하의 무주택 청년</strong>으로 부모와 따로 거주해야 하며, 소득 및 자산 기준을 모두 충족해야 합니다.</p>
+        <div class="overflow-x-auto mb-4">
+            <table class="min-w-full divide-y divide-gray-200 border text-sm">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-4 py-2 text-left font-bold text-gray-900">구분</th>
+                        <th class="px-4 py-2 text-left font-bold text-gray-900">소득 기준 (기준 중위소득)</th>
+                        <th class="px-4 py-2 text-left font-bold text-gray-900">자산 기준</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200 bg-white">
+                    <tr>
+                        <td class="px-4 py-2 font-medium text-gray-900">청년가구 (청년+배우자 등)</td>
+                        <td class="px-4 py-2 text-gray-700">60% 이하 (1인 가구 약 153만 원)</td>
+                        <td class="px-4 py-2 text-gray-700">총재산 1억 2,200만 원 이하</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 font-medium text-gray-900">원가구 (청년+부모)</td>
+                        <td class="px-4 py-2 text-gray-700">100% 이하 (3인 가구 약 535만 원)</td>
+                        <td class="px-4 py-2 text-gray-700">총재산 4억 7,000만 원 이하</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="mb-4 text-gray-700 leading-relaxed">※ 만 30세 이상이거나 혼인, 혹은 이혼하여 부모와 생계를 달리하는 독립 청년의 경우 '원가구'의 소득과 재산은 심사하지 않고 청년 본인가구만 확인합니다.</p>
+        
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">3. 지원 내용 및 신청 방법</h3>
+        <p class="mb-4 text-gray-700 leading-relaxed">조건에 부합할 경우 <strong>생애 1회에 한해 월 최대 20만 원씩</strong> 현금으로 지급됩니다. 실제 납부하는 월세 범위 내에서만 지원되며 보증금이나 관리비는 제외됩니다. 만약 주거급여를 이미 받고 있다면, 주거급여액 중 월세 지원분을 차감한 금액만큼만 추가로 매월 지급됩니다.</p>
+        <p class="mb-4 text-gray-700 leading-relaxed">신청은 주소지 관할 주민센터(행정복지센터)에 직접 방문하거나, 온라인 복지 포털인 <strong>'복지로(www.bokjiro.go.kr)'</strong> 홈페이지 및 앱을 통해 간편하게 접수할 수 있습니다. 신청 시에는 월세지원 신청서, 임대차계약서, 최근 3개월간 월세 이체 증빙 서류, 통장 사본, 가족관계증명서 등이 필요하므로 미리 구비해 두는 것이 좋습니다.</p>
+    `
+},
+        {
+    "id": 63,
+    "category": "finance",
+    "categoryKo": "금융·재정",
+    "title": "2026년 개편! 서민금융진흥원 햇살론 대출 상품 완벽 가이드",
+    "summary": "복잡했던 햇살론이 2026년부터 일반보증과 특례보증 체계로 대폭 단순화되었습니다. 청년 전용 상품을 포함한 맞춤형 서민금융 대출 정보를 확인해보세요.",
+    "date": "2026-07-05",
+    "author": "금융 정책 에디터",
+    "readTime": "4분 소요",
+    "content": `
+        <p class="mb-4 text-gray-700 leading-relaxed">신용등급이 낮거나 소득이 적어 제1금융권 은행 이용이 어려운 서민들을 위해 서민금융진흥원(서금원)에서는 다양한 보증부 대출 상품을 지원하고 있습니다. 특히 2026년부터는 복잡했던 기존 상품(근로자햇살론, 햇살론15, 햇살론뱅크 등)을 고객의 상황에 맞게 <strong>'햇살론 일반보증'</strong>과 <strong>'햇살론 특례보증'</strong> 등 두 가지 핵심 축으로 전격 통합하여 이용 편의성을 크게 높였습니다.</p>
+        
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">1. 2026년 개편 햇살론 핵심 요약</h3>
+        <p class="mb-2 text-gray-700 leading-relaxed">기존의 여러 정책서민금융상품이 단순화되면서, 이제 모든 금융권에서 보다 쉽게 신청할 수 있게 되었습니다.</p>
+        <div class="overflow-x-auto mb-4">
+            <table class="min-w-full divide-y divide-gray-200 border text-sm">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-4 py-2 text-left font-bold text-gray-900">구분</th>
+                        <th class="px-4 py-2 text-left font-bold text-gray-900">지원 대상 및 소득 조건</th>
+                        <th class="px-4 py-2 text-left font-bold text-gray-900">대출 한도 및 금리</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200 bg-white">
+                    <tr>
+                        <td class="px-4 py-2 font-medium text-gray-900"><strong>햇살론 일반보증</strong><br>(기존 근로자햇살론·햇살론뱅크)</td>
+                        <td class="px-4 py-2 text-gray-700">연소득 3,500만 원 이하 (평점 무관)<br>또는 연소득 4,500만 원 이하 + 신용 하위 20%</td>
+                        <td class="px-4 py-2 text-gray-700">최대 1,500만 원<br>연 10% 이내 (금융사별 상이)</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 font-medium text-gray-900"><strong>햇살론 특례보증</strong><br>(기존 햇살론15·최저신용자특례)</td>
+                        <td class="px-4 py-2 text-gray-700">연소득 3,500만 원 이하 + 신용 하위 20% 이하<br>(제도권 금융 이용이 어려운 최저신용자)</td>
+                        <td class="px-4 py-2 text-gray-700">최대 1,000만 원<br>연 12.5% 이내 (배려대상 9.9%)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="mb-4 text-gray-700 leading-relaxed">※ 두 상품 모두 중도상환수수료가 없으며, 원리금균등분할상환 방식으로 진행됩니다. 특히 특례보증의 경우 대출 금리가 기존보다 인하되었으며, 최대 1년의 거치 기간을 선택할 수 있어 초기 상환 부담을 줄였습니다.</p>
+        
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">2. 대학생 및 청년 전용: 햇살론 유스(Youth)</h3>
+        <p class="mb-4 text-gray-700 leading-relaxed">대학생, 미취업 청년, 사회초년생(중소기업 재직 1년 이하)의 금융 애로를 해소하기 위한 청년 전용 저금리 상품입니다. 만 34세 이하이면서 연소득 3,500만 원 이하 라면 신청할 수 있습니다. 1인당 생애 단 한 번만 이용할 수 있으며, <strong>최대 1,200만 원 한도 내에서 연 5%대(사회적 배려대상자는 2%)</strong>의 아주 낮은 금리로 지원합니다. 취업 준비 기간을 고려해 거치 기간을 최대 8년까지 설정할 수 있다는 것이 큰 장점입니다.</p>
+        
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">3. 신청 방법 및 주의사항</h3>
+        <p class="mb-4 text-gray-700 leading-relaxed">기본적으로 서민금융진흥원 모바일 앱 또는 통합 플랫폼인 <strong>'서민금융 잇다'</strong> 앱을 통해 비대면으로 자격 조회가 가능합니다. 일반보증의 경우 협약된 은행이나 저축은행 앱을 통해 즉시 신청할 수 있으며, 특례보증은 서민금융종합지원센터 방문 상담 혹은 앱을 통한 직접 보증 신청으로 진행됩니다. 대출 신청 전 금융교육을 이수하거나 복지멤버십에 가입하면 보증료율 인하 혜택을 받을 수 있으니 잊지 말고 챙기시길 바랍니다.</p>
+    `
 }
+
+
+
 
 
 
