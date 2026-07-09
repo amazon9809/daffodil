@@ -2485,7 +2485,43 @@
     <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">마치며: 수면 점수 80점을 목표로!</h3>
     <p class="mb-4 text-gray-700 leading-relaxed">스마트워치 수면 점수 80점 이상은 '매우 우수'한 수면을 취했다는 증거입니다. 오늘 밤부터 스마트워치를 손목에 딱 맞게 채우고, 침실 온도를 낮춘 뒤 규칙적인 시간에 잠들어 보세요. 일주일만 실천해도 우상향하는 수면 그래프와 함께 몰라보게 개운해진 아침을 맞이할 수 있을 것입니다.</p>
   `
+},
+{
+  "id": 4, 
+  "category": "finance",
+  "categoryKo": "금융·테크",
+  "title": "알뜰폰 결합할인 vs 번호이동(번이) 혜택, 나에게 맞는 통신 재테크는?",
+  "summary": "알뜰폰으로 갈아탈 때 '인터넷·가족 결합할인'을 유지하는 게 이득일까요, 아니면 주기적인 '번호이동 혜택'을 챙기는 게 이득일까요? 두 방식의 장단점과 핵심 혜택을 낱낱이 비교해 드립니다.",
+  "date": "2026-07-09",
+  "author": "정보 에디터",
+  "readTime": "4분 소요",
+  "content": `
+    <p class="mb-4 text-gray-700 leading-relaxed">고물가 시대에 통신비를 줄이기 위해 알뜰폰(MVNO)으로 눈을 돌리는 분들이 많습니다. 하지만 기존 메이저 3사(SKT, KT, LGU+)에서 받던 결합할인이 깨질까 봐 망설이거나, 알뜰폰 간 이동 시 어떤 혜택이 있는지 몰라 손해를 보기도 하는데요. 오늘은 알뜰폰의 결합할인 구조와 번호이동(번이) 혜택을 완벽하게 비교해 보겠습니다.</p>
+    
+    <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">1. 알뜰폰 결합할인: "알뜰폰도 인터넷 결합이 된다!"</h3>
+    <p class="mb-4 text-gray-700 leading-relaxed">많은 분들이 오해하시는 부분 중 하나가 '알뜰폰은 인터넷 결합이 안 된다'는 점입니다. 하지만 최근에는 알뜰폰 통신사들도 메이저 3사의 망(SK, KT, LG)에 따라 유선 인터넷 및 IPTV와 결합해 매달 대폭적인 할인을 제공하고 있습니다.</p>
+    <ul class="list-disc list-inside mb-4 text-gray-700 leading-relaxed">
+      <li class="mb-2"><strong>SK브로드밴드(SKB) 망 결합:</strong> 특정 SKT망 알뜰폰 요금제와 인터넷을 결합할 경우, 500M 인터넷 기준 월 최대 11,000원 수준의 큰 할인 폭을 제공합니다. (단, 개통 후 30일 이내 신청 필수)</li>
+      <li class="mb-2"><strong>KT / LG U+ 망 결합:</strong> 제휴된 알뜰폰을 사용하면 인터넷 요금뿐만 아니라 알뜰폰 요금 자체에서도 매달 추가 할인(회선당 수천 원 가량)을 받을 수 있어 결합 메리트가 큽니다.</li>
+    </ul>
+    <p class="mb-4 text-gray-700 leading-relaxed"><strong>추천 대상:</strong> 한 집에서 인터넷과 TV를 장기 약정(3년)으로 묶어 사용 중이며, 통신사를 자주 옮기기 귀찮아하는 장기 정착형 사용자에게 유리합니다.</p>
+    
+    <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">2. 번호이동(번이) 혜택: "체리피커들을 위한 0원 요금제와 사은품"</h3>
+    <p class="mb-4 text-gray-700 leading-relaxed">알뜰폰의 진정한 매력은 약정이 없다는 점입니다. 이 점을 활용해 다른 알뜰폰 통신사로 번호이동(기존 번호 그대로 통신사만 변경)을 하며 혜택만 쏙쏙 골라 먹는 '환승족'이 늘고 있습니다.</p>
+    <ul class="list-disc list-inside mb-4 text-gray-700 leading-relaxed">
+      <li class="mb-2"><strong>프로모션 특가(0원~1만 원대 요금제):</strong> 신규 번호이동 고객을 대상으로 6~7개월간 요금을 파격적으로 할인하거나 아예 '0원'에 제공하는 이벤트가 매달 열립니다.</li>
+      <li class="mb-2"><strong>풍성한 가입 사은품:</strong> 번호이동 시 네이버페이 포인트, 상품권(신세계/다이소), 제휴 구독권(밀리의 서재 등)을 증정하여 초기 가입 비용을 상쇄하고도 남는 이득을 줍니다.</li>
+    </ul>
+    <p class="mb-4 text-gray-700 leading-relaxed"><strong>추천 대상:</strong> 결합할 필요가 없는 1인 가구이거나, 6~12개월마다 요금제를 비교하고 주도적으로 번호이동을 할 부지런함이 있는 사용자에게 최고의 효율을 자랑합니다.</p>
+    
+    <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">한눈에 보는 비교 및 주의사항</h3>
+    <p class="mb-4 text-gray-700 leading-relaxed">안정적인 가성비를 원한다면 <strong>[알뜰폰+인터넷 결합]</strong>을, 귀찮음을 감수하더라도 극강의 지출 절감을 원한다면 <strong>[6~7개월 주기 번호이동]</strong>을 선택하는 것이 좋습니다.</p>
+    <blockquote class="border-l-4 border-gray-500 padding-left pl-4 my-4 italic text-gray-600">
+      💡 <strong>주의하세요!</strong><br>
+      결합할인을 받던 도중 다른 알뜰폰 통신사로 번호이동을 하게 되면 <strong>기존 결합할인이 자동으로 해제</strong>되며, 인터넷 위약금(할인반환금)이 발생할 수 있습니다. 따라서 번호이동 전 반드시 현재 묶여 있는 결합 상품의 약정 만료일과 위약금을 고객센터를 통해 확인하시기 바랍니다.
+  `
 }
+
 
 
          ];
