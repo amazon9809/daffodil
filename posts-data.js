@@ -2566,7 +2566,163 @@
       스마트폰 배터리는 소모품이지만, 사용자의 관리 습관에 따라 그 수명이 두 배 이상 차이 날 수 있습니다. 화면 밝기 조절이나 앱 정리 같은 자잘한 노력보다, 배터리 보호 기능을 켜서 20-80% 구간을 유지하는 것이 가장 과학적이고 확실한 배터리 수명 연장 공식입니다. 지금 바로 스마트폰 설정에 들어가 배터리 보호 옵션을 활성화하고, 소중한 기기를 더 오랫동안 최상의 성능으로 사용해 보시기 바랍니다.
     </p>
   `
-}
+},
+
+          {
+    "id": 69,
+    "category": "tech",
+    "categoryKo": "기술/안전",
+    "title": "삼성반도체 건설현장 안전담당 BASIC 대비 연습문제 (01~25번)",
+    "summary": "삼성반도체 및 일반 건설현장 안전담당 BASIC 시험에 대비할 수 있는 실전 연습문제 25문항과 정답입니다. 핵심 안전 지식을 점검해 보세요.",
+    "date": "2026-07-12",
+    "author": "정보 에디터",
+    "readTime": "7분 소요",
+    "content": `
+        <p class="mb-4 text-gray-700 leading-relaxed">삼성반도체 건설현장 안전담당BASIC 시험 대비, 일반적인 산업안전보건 지식을 바탕으로 만든 연습문제입니다. 특정 교재의 실제 문항을 그대로 재현한 것은 아니며, 건설/반도체 현장 안전 관리에서 자주 다루는 핵심 개념 위주로 새로 구성했습니다.</p>
+        
+        <hr class="my-6 border-gray-200">
+        
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">연습문제 (01~25번)</h3>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>01. 산업안전보건법상 사업주가 근로자에게 실시해야 하는 안전보건교육에 해당하지 않는 것은?</strong><br>① 채용 시 교육<br>② 작업내용 변경 시 교육<br>③ 특별교육<br>④ 연봉 협상 교육</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>02. 위험성평가의 실시 순서로 옳은 것은?</strong><br>① 유해위험요인 파악 → 위험성 결정 → 감소대책 수립 → 위험성 추정<br>② 유해위험요인 파악 → 위험성 추정 → 위험성 결정 → 감소대책 수립<br>③ 감소대책 수립 → 위험성 결정 → 위험성 추정 → 유해위험요인 파악<br>④ 위험성 결정 → 유해위험요인 파악 → 감소대책 수립 → 위험성 추정</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>03. 추락재해 예방을 위한 안전대 부착설비의 설치 기준으로 옳지 않은 것은?</strong><br>① 로프의 지지점은 근로자의 허리 위치보다 높게 설치한다<br>② 안전대 부착설비는 최대 하중을 견딜 수 있어야 한다<br>③ 안전대는 벨트식보다 그네식을 우선 사용하도록 권장한다<br>④ 안전대 부착설비는 작업이 끝난 후 한 번만 점검하면 된다</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>04. 밀폐공간 작업 시 산소농도의 적정 기준은?</strong><br>① 15% 이상 20% 미만<br>② 18% 이상 23.5% 미만<br>③ 10% 이상 15% 미만<br>④ 25% 이상</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>05. 개인보호구 중 방진마스크를 착용해야 하는 작업은?</strong><br>① 소음이 심한 작업<br>② 분진이 발생하는 작업<br>③ 고온의 복사열이 있는 작업<br>④ 감전 위험이 있는 작업</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>06. 화재의 3요소에 해당하지 않는 것은?</strong><br>① 가연물<br>② 산소공급원<br>③ 점화원<br>④ 습도</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>07. 전기작업 시 감전재해 예방 조치로 옳지 않은 것은?</strong><br>① 작업 전 전원을 차단한다<br>② 검전기로 충전 여부를 확인한다<br>③ 절연용 보호구를 착용한다<br>④ 젖은 손으로 신속하게 작업한다</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>08. 크레인 등 양중기 작업 시 신호수의 역할로 옳지 않은 것은?</strong><br>① 운전자와 명확한 신호 체계를 사전에 정한다<br>② 작업 반경 내 근로자 출입을 통제한다<br>③ 신호수는 여러 작업을 동시에 겸임해도 무방하다<br>④ 인양물의 낙하 위험을 사전에 확인한다</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>09. MSDS(물질안전보건자료)에 포함되어야 하는 항목이 아닌 것은?</strong><br>① 화학제품과 회사에 관한 정보<br>② 유해성·위험성<br>③ 근로자의 개인 신상정보<br>④ 응급조치 요령</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>10. 건설현장에서 비계 설치 시 안전 기준으로 옳은 것은?</strong><br>① 작업발판의 폭은 40cm 이상이어야 한다<br>② 비계 기둥 간격은 제한이 없다<br>③ 안전난간은 설치하지 않아도 된다<br>④ 비계는 점검 없이 계속 사용할 수 한다</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>11. 굴착작업 시 붕괴재해 예방 조치로 옳지 않은 것은?</strong><br>① 굴착면의 기울기 기준을 준수한다<br>② 흙막이 지보공을 설치한다<br>③ 굴착 깊이와 관계없이 동일한 기준을 적용한다<br>④ 용수 발생 시 배수시설을 설치한다</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>12. 반도체 공정에서 사용되는 특수가스 취급 시 주의사항으로 옳지 않은 것은?</strong><br>① 가스누출 감지기를 설치한다<br>② 환기설비를 상시 가동한다<br>③ 가스 종류에 관계없이 동일한 보호구를 사용한다<br>④ MSDS를 비치하고 숙지한다</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>13. 유기용제 중독 예방을 위한 조치로 옳지 않은 것은?</strong><br>① 국소배기장치를 설치한다<br>② 밀폐된 공간에서 장시간 작업을 유도한다<br>③ 보호구를 착용한다<br>④ 작업환경을 주기적으로 측정한다</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>14. 산업재해 발생 시 사업주의 조치 순서로 옳은 것은?</strong><br>① 응급조치 → 2차 재해 방지 → 재해 원인 조사 → 재발 방지 대책 수립<br>② 재발 방지 대책 수립 → 응급조치 → 원인 조사 → 2차 재해 방지<br>③ 원인 조사 → 응급조치 → 재발 방지 대책 → 2차 재해 방지<br>④ 2차 재해 방지 → 재발 방지 대책 → 응급조치 → 원인 조사</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>15. 지게차 운행 시 안전수칙으로 옳지 않은 것은?</strong><br>① 운행경로에 보행자와의 분리를 확보한다<br>② 화물을 높이 든 상태로 주행한다<br>③ 정격하중을 초과하여 적재하지 않는다<br>④ 후진 시 경보음과 후방 확인을 병행한다</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>16. 국소배기장치의 설치 목적으로 가장 적절한 것은?</strong><br>① 실내 온도 조절<br>② 유해물질의 발생원에서 오염물질을 포집·배출<br>③ 소음 차단<br>④ 조명 개선</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>17. 근로자의 작업중지권이 인정되는 경우는?</strong><br>① 작업이 지연될 우려가 있을 때<br>② 산업재해가 발생할 급박한 위험이 있을 때<br>③ 관리자의 지시가 없을 때<br>④ 개인적으로 피곤할 때</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>18. 안전보건표지 중 금지표지의 색상은?</strong><br>① 노란색 바탕에 검은색 그림<br>② 흰색 바탕에 빨간색 테두리 및 사선<br>③ 녹색 바탕에 흰색 그림<br>④ 파란색 바탕에 흰색 그림</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>19. 밀폐공간 작업 시 감시인의 역할로 옳지 않은 것은?</strong><br>① 작업자와 지속적으로 연락을 유지한다<br>② 이상 발생 시 즉시 구조 요청을 한다<br>③ 감시인도 작업에 함께 투입되어 작업을 돕는다<br>④ 출입자 명단을 관리한다</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>20. 소화기 사용 시 올바른 방법(PASS 기법)의 순서로 옳은 것은?</strong><br>① 안전핀 제거 → 노즐 조준 → 손잡이 압착 → 좌우로 방사<br>② 손잡이 압착 → 안전핀 제거 → 좌우로 방사 → 노즐 조준<br>③ 좌우로 방사 → 노즐 조준 → 안전핀 제거 → 손잡이 압착<br>④ 노즐 조준 → 좌우로 방사 → 손잡이 압착 → 안전핀 제거</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>21. 근로자 건강진단의 종류에 해당하지 않는 것은?</strong><br>① 일반건강진단<br>② 특수건강진단<br>③ 배치전건강진단<br>④ 정년퇴직건강진단</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>22. 유해화학물질 저장 시 주의사항으로 옳지 않은 것은?</strong><br>① 서로 반응성이 있는 물질은 분리 보관한다<br>② 용기에 내용물과 위험성을 표시한다<br>③ 모든 화학물질은 한 곳에 종류 구분 없이 보관한다<br>④ 환기가 잘 되는 곳에 보관한다</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>23. 고소작업대(차량탑재형 등) 사용 시 안전수칙으로 옳지 않은 것은?</strong><br>① 작업 전 아웃트리거를 고정한다<br>② 탑승자는 안전대를 착용한다<br>③ 정격 인양하중을 초과하여 사용해도 무방하다<br>④ 지반 상태를 확인 후 설치한다</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>24. 산업안전보건법상 "중대재해"에 해당하는 기준으로 옳은 것은?</strong><br>① 부상자 1명이 발생한 경우<br>② 사망자가 1명 이상 발생한 경우<br>③ 재산 피해만 발생한 경우<br>④ 작업이 1일 지연된 경우</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>25. 안전관리자의 직무로 옳지 않은 것은?</strong><br>① 산업재해 예방계획 수립에 관한 보좌<br>② 안전교육계획 수립 및 실시<br>③ 사업장 순회점검 및 지도<br>④ 근로자의 급여 계산 및 지급</p>
+        
+        <hr class="my-6 border-gray-200">
+        
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">정답 및 해설</h3>
+        <p class="mb-4 text-gray-700 leading-relaxed">
+            <strong>01~10번:</strong> ④ / ② / ④ / ② / ② / ④ / ④ / ③ / ③ / ①<br>
+            <strong>11~20번:</strong> ③ / ③ / ② / ① / ② / ② / ② / ② / ③ / ①<br>
+            <strong>21~25번:</strong> ④ / ③ / ③ / ② / ④
+        </p>
+    `
+  },
+
+          {
+    "id": 70,
+    "category": "tech",
+    "categoryKo": "기술/안전",
+    "title": "삼성반도체 건설현장 안전담당 BASIC 대비 연습문제 (26~50번)",
+    "summary": "삼성반도체 및 일반 건설현장 안전담당 BASIC 시험에 대비할 수 있는 실전 연습문제 후반부 25문항과 정답입니다. 안전 관리 개념을 확실히 정리해 보세요.",
+    "date": "2026-07-12",
+    "author": "정보 에디터",
+    "readTime": "7분 소요",
+    "content": `
+        <p class="mb-4 text-gray-700 leading-relaxed">삼성반도체 건설현장 안전담당BASIC 시험 대비, 일반적인 산업안전보건 지식을 바탕으로 만든 연습문제 후반부(26~50번)입니다. 현장 안전 관리에 꼭 필요한 핵심 법령 및 기술 지식을 점검할 수 있도록 구성했습니다.</p>
+        
+        <hr class="my-6 border-gray-200">
+        
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">연습문제 (26~50번)</h3>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>26. 근로자가 밀폐공간에 출입하기 전 확인해야 할 사항이 아닌 것은?</strong><br>① 산소농도 측정<br>② 유해가스 농도 측정<br>③ 작업복 색상<br>④ 환기 상태 확인</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>27. 크레인 와이어로프의 사용 금지 기준으로 옳지 않은 것은?</strong><br>① 소선의 수가 10% 이상 절단된 것<br>② 지름 감소가 공칭지름의 7%를 초과하는 것<br>③ 킹크(꼬임)가 생긴 것<br>④ 새로 구입하여 1회만 사용한 것</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>28. 추락방지망(안전망) 설치 기준으로 옳지 않은 것은?</strong><br>① 작업면으로부터 낙하 높이를 고려하여 설치한다<br>② 그물코의 크기는 규정을 준수한다<br>③ 설치 후 처짐 정도는 고려하지 않는다<br>④ 벽면과 그물 사이의 간격을 준수한다</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>29. 유해광선(자외선, 적외선 등)에 대한 보호구로 적절한 것은?</strong><br>① 방음보호구<br>② 차광보호구<br>③ 방독마스크<br>④ 안전화</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>30. 산업안전보건법상 사업주가 안전보건관리책임자에게 총괄 관리하도록 하는 업무가 아닌 것은?</strong><br>① 산업재해 예방계획 수립<br>② 안전보건관리규정 작성 및 변경<br>③ 근로자의 개인 신용정보 관리<br>④ 안전보건교육에 관한 사항</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>31. 화학물질 취급 시 개인보호구 선정 기준으로 옳은 것은?</strong><br>① 가격이 저렴한 것 우선<br>② 취급 물질의 유해성 및 노출 형태를 고려<br>③ 착용 편의성만 고려<br>④ 색상 우선 고려</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>32. 타워크레인 설치·해체 작업 시 준수사항으로 옳지 않은 것은?</strong><br>① 작업계획서를 작성한다<br>② 강풍 등 악천후 시에도 작업을 강행한다<br>③ 작업지휘자를 지정한다<br>④ 관계 근로자 외 출입을 통제한다</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>33. 근로자가 반드시 안전모를 착용해야 하는 이유는?</strong><br>① 미관을 위해<br>② 낙하·비래 및 추락 시 머리 부위 상해 방지<br>③ 작업 속도 향상<br>④ 온도 조절</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>34. 사다리작업 시 안전수칙으로 옳지 않은 것은?</strong><br>① 사다리는 견고한 지반 위에 설치한다<br>② 사다리 상단은 벽면에서 미끄러지지 않도록 고정한다<br>③ 사다리 위에서 옆으로 무리하게 몸을 뻗는다<br>④ 2인 1조로 작업하는 것을 권장한다</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>35. 산소결핍증의 주요 증상이 아닌 것은?</strong><br>① 두통 및 현기증<br>② 호흡곤란<br>③ 의식불명<br>④ 시력 향상</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>36. 리프트 및 승강기 안전장치가 아닌 것은?</strong><br>① 과부하방지장치<br>② 비상정지장치<br>③ 승강로 문 인터록<br>④ 온도조절장치</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>37. 콘크리트 타설 작업 시 붕괴재해 예방 조치로 옳지 않은 것은?</strong><br>① 거푸집동바리의 구조 검토<br>② 콘크리트 타설 속도 및 높이 준수<br>③ 타설 전 지주 침하 여부 확인<br>④ 타설 중 점검을 생략한다</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>38. 유해·위험 기계·기구 방호장치가 아닌 것은?</strong><br>① 급정지장치<br>② 안전덮개<br>③ 광전자식 방호장치<br>④ 냉난방장치</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>39. 근골격계 부담작업 예방을 위한 조치로 옳지 않은 것은?</strong><br>① 작업자세 개선<br>② 중량물 취급 시 보조기구 사용<br>③ 동일 자세로 장시간 반복작업을 유도<br>④ 작업 순환 배치</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>40. 화재 발생 시 초기 대응 순서로 옳은 것은?</strong><br>① 화재 발견 → 경보 → 초기 소화 → 대피<br>② 대피 → 경보 → 화재 발견 → 초기 소화<br>③ 초기 소화 → 화재 발견 → 대피 → 경보<br>④ 경보 → 대피 → 초기 소화 → 화재 발견</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>41. 정전기 재해 예방 대책으로 옳지 않은 것은?</strong><br>① 접지를 실시한다<br>② 도전성 재료를 사용한다<br>③ 습도를 낮게 유지한다<br>④ 대전방지 작업복을 착용한다</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>42. 산업안전보건법상 도급 시 안전보건 조치 의무와 관련하여 옳은 것은?</strong><br>① 도급인은 수급인 근로자의 안전에 대해 책임이 없다<br>② 도급인은 관계수급인 근로자의 산업재해 예방을 위한 조치를 하여야 한다<br>③ 수급인만 안전조치 의무가 있다<br>④ 안전보건 조치는 발주자만 책임진다</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>43. 사고사례 분석 시 하인리히의 법칙(1:29:300)이 의미하는 것은?</strong><br>① 중상 1건 발생 시 경상 29건, 무상해사고 300건이 선행된다<br>② 사망 1건당 부상 1건이 발생한다<br>③ 재해는 예측이 불가능하다<br>④ 안전사고는 우연히 발생한다</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>44. 굴착기(굴삭기) 작업 시 안전수칙으로 옳지 않은 것은?</strong><br>① 작업반경 내 근로자 출입을 통제한다<br>② 붐 또는 암 작업 반경 내에서 신호수와 협업한다<br>③ 운전자가 이석 시에도 시동을 켜둔다<br>④ 지반 상태를 확인 후 작업한다</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>45. 개인용 보호구 관리 방법으로 옳지 않은 것은?</strong><br>① 정기적으로 점검한다<br>② 손상된 보호구는 즉시 교체한다<br>③ 여러 근로자가 공용으로 사용해도 무방하다<br>④ 청결하게 유지·보관한다</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>46. 안전인증 대상 기계·기구에 해당하지 않는 것은?</strong><br>① 프레스<br>② 크레인<br>③ 압력용기<br>④ 사무용 의자</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>47. 근로자 안전교육 중 "특별안전보건교육" 대상 작업이 아닌 것은?</strong><br>① 밀폐공간 작업<br>② 고압선 근접 작업<br>③ 사무실 문서 작업<br>④ 타워크레인 신호작업</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>48. 위험물 취급 시 표시해야 할 사항이 아닌 것은?</strong><br>① 위험물의 종류<br>② 취급 시 주의사항<br>③ 담당자의 취미<br>④ 응급조치 요령</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>49. 산업안전보건법상 사업주의 의무가 아닌 것은?</strong><br>① 안전보건관리체제 구축<br>② 유해위험 방지 조치<br>③ 근로자의 개인 재산 관리<br>④ 안전보건교육 실시</p>
+        
+        <p class="mb-2 text-gray-700 leading-relaxed"><strong>50. 사업장 순회점검의 주요 목적은?</strong><br>① 근로자 성과 평가<br>② 유해·위험요인의 사전 발견 및 개선<br>③ 생산성 극대화<br>④ 인사고과 반영</p>
+        
+        <hr class="my-6 border-gray-200">
+        
+        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">정답 및 해설</h3>
+        <p class="mb-4 text-gray-700 leading-relaxed">
+            <strong>26~35번:</strong> ③ / ④ / ③ / ② / ③ / ② / ② / ② / ③ / ④<br>
+            <strong>36~45번:</strong> ④ / ④ / ④ / ③ / ① / ③ / ② / ① / ③ / ③<br>
+            <strong>46~50번:</strong> ④ / ③ / ③ / ③ / ②
+        </p>
+    `
+  }
+                ];
+
 
                
-  ];
+  
