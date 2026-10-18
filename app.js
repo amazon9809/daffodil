@@ -4,6 +4,8 @@
 //  posts-data.js 가 먼저 로드되어 blogPosts 배열을 만들어 둡니다.
 // ============================================================
 
+const SITE_TITLE = 'gaffodil';
+
 // ── 페이지네이션 & 필터 상태 ──
 let currentCategory = 'all';
 let currentPage = 1;
@@ -29,7 +31,6 @@ function updateCategoryCounts() {
 function renderPosts() {
     const container = document.getElementById('posts-container');
     if (!container) return;
-    container.innerHTML = "";
 
     const filtered = getFilteredPosts();
     const totalPages = Math.max(1, Math.ceil(filtered.length / POSTS_PER_PAGE));
@@ -41,10 +42,9 @@ function renderPosts() {
 
     if (pagePosts.length === 0) {
         container.innerHTML = `<p class="col-span-2 text-center text-sm text-gray-400 py-10">해당 카테고리에 글이 없습니다.</p>`;
-    }
-
-    pagePosts.forEach(post => {
-        container.innerHTML += `
+    } else {
+        // innerHTML += 를 반복하면 매번 DOM을 다시 만들어 느려지므로 문자열을 모아서 한 번에 넣습니다.
+        container.innerHTML = pagePosts.map(post => `
             <div onclick="viewDetail(${post.id})" class="bg-white rounded-xl p-4 md:p-5 shadow-sm border border-gray-100 hover:shadow-md transition cursor-pointer flex flex-col justify-between">
                 <div>
                     <span class="text-[11px] font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded">${post.categoryKo}</span>
@@ -56,8 +56,8 @@ function renderPosts() {
                     <span>${post.readTime}</span>
                 </div>
             </div>
-        `;
-    });
+        `).join('');
+    }
 
     renderPagination(totalPages);
     updateCategoryCounts();
@@ -155,6 +155,9 @@ function showPage(pageId) {
     if (targetPage) targetPage.classList.remove('hidden');
     window.scrollTo(0, 0);
 
+    // 상세글을 벗어나면 title을 사이트 기본값으로 되돌립니다.
+    document.title = SITE_TITLE;
+
     // '목록으로 돌아가기' 등으로 홈에 왔을 때도 상세글 URL을 정리합니다.
     if (pageId === 'home') {
         const url = new URL(window.location);
@@ -163,6 +166,32 @@ function showPage(pageId) {
             history.replaceState({}, '', url);
         }
     }
+}
+
+// ── 광고(Kakao AdFit) ──
+// 상세 페이지 하단 300x250 광고의 ins 태그만 만들어 둡니다. (스크립트는 loadAdfitScript에서 한 번에 로드)
+function renderDetailAdSlot() {
+    const box = document.getElementById('detail-ad');
+    if (!box) return;
+    box.innerHTML = '';
+    const ins = document.createElement('ins');
+    ins.className = 'kakao_ad_area';
+    ins.style.display = 'none';
+    ins.setAttribute('data-ad-unit', 'DAN-n7FG9S9Ns4MwP5Ku');
+    ins.setAttribute('data-ad-width', '300');
+    ins.setAttribute('data-ad-height', '250');
+    box.appendChild(ins);
+}
+
+// ba.min.js는 로드될 때 페이지의 ins를 찾아 광고를 채웁니다.
+// 글을 열 때마다 새 ins가 생기므로, 이전 동적 스크립트를 지우고 다시 로드해야 매번 노출됩니다.
+function loadAdfitScript() {
+    document.querySelectorAll('script[data-adfit-dynamic]').forEach(s => s.remove());
+    const s = document.createElement('script');
+    s.src = '//t1.kakaocdn.net/kas/static/ba.min.js';
+    s.async = true;
+    s.setAttribute('data-adfit-dynamic', '1');
+    document.body.appendChild(s);
 }
 
 // ── 상세 페이지 렌더링 + 실제 URL(?id=) 부여 ──
@@ -176,9 +205,6 @@ function viewDetail(id, skipPushState) {
         url.searchParams.set('id', id);
         history.pushState({ postId: id }, '', url);
     }
-
-    // SEO용 title 태그도 함께 변경
-    document.title = post.title + ' | Tech&Life';
 
     const detailContainer = document.getElementById('post-detail-content');
     detailContainer.innerHTML = `
@@ -203,16 +229,12 @@ function viewDetail(id, skipPushState) {
     `;
     showPageRaw('detail');
 
-    // 광고 스크립트 동적 재로드
-    if (!document.querySelector('script[src*="ba.min.js"][data-loaded="mid"]')) {
-        const adScript = document.createElement('script');
-        adScript.src = '//t1.kakaocdn.net/kas/static/ba.min.js';
-        adScript.async = true;
-        adScript.setAttribute('data-loaded', 'mid');
-        document.body.appendChild(adScript);
-    } else if (window.kakao && window.kakao.ad) {
-        try { window.kakao.ad.init(); } catch (e) {}
-    }
+    // SEO용 title 태그 변경 (showPageRaw 이후에 설정)
+    document.title = post.title + ' | Tech&Life';
+
+    // 본문 중간 광고 + 하단 광고를 한 번의 스크립트 로드로 함께 채웁니다.
+    renderDetailAdSlot();
+    loadAdfitScript();
 }
 
 // showPage와 동일하지만 상세페이지 진입 시 URL(id)을 지우지 않는 내부용 함수
@@ -228,7 +250,7 @@ function injectMidAd(content) {
     const adHtml = `
         <div class="my-8 text-center not-prose">
             <span class="text-[10px] text-gray-400 block mb-1">ADVERTISEMENT</span>
-            <div class="flex justify-center">
+            <div class="flex justify-center overflow-hidden">
                 <ins class="kakao_ad_area" style="display:none;"
                     data-ad-unit="DAN-FkPNnJnYvpHfHGjF"
                     data-ad-width="320"
@@ -236,7 +258,12 @@ function injectMidAd(content) {
             </div>
         </div>`;
 
-    const paragraphs = content.split(/(?<=<\/p>)/i);
+    // lookbehind 정규식은 구형 Safari에서 오류가 나므로 '</p>' 기준으로 직접 나눕니다.
+    const parts = content.split(/<\/p>/i);
+    const tail = parts.pop(); // 마지막 </p> 뒤에 남은 내용
+    const paragraphs = parts.map(p => p + '</p>');
+    if (tail) paragraphs.push(tail);
+
     if (paragraphs.length < 2) return content + adHtml;
 
     const midIndex = Math.ceil(paragraphs.length / 2);
