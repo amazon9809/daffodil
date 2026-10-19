@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7903435708794735"
-     crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="google-adsense-account" content="ca-pub-7903435708794735">
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -15,11 +12,9 @@
     })(window,document,'script','dataLayer','GTM-5N4CRMMZ');</script>
     <!-- End Google Tag Manager -->
 
-    <meta name="google-adsense-account" content="ca-pub-7903435708794735"/>
     <meta name="naver-site-verification" content="47b6c03d49cde397ff30aa0e1364c646e0222e5a"/>
     <meta name="monetag" content="ab9eb29756dfd820f7b006b3820944c8"/>
     <title>gaffodil</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7903435708794735" crossorigin="anonymous"></script>
     <!-- 운영 환경에서는 Tailwind를 빌드한 CSS 파일로 교체하는 것을 권장합니다 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -55,11 +50,6 @@
         </div>
     </header>
 
-    <!-- 상단 배너: 화면 폭에 따라 728x90 / 320x100 중 하나만 삽입 -->
-    <div class="max-w-6xl mx-auto w-full px-4 mt-6">
-        <div id="top-ad" class="flex justify-center overflow-hidden"></div>
-    </div>
-
     <main class="max-w-6xl mx-auto w-full px-4 py-8 flex-grow grid grid-cols-1 lg:grid-cols-3 gap-8">
 
         <section class="lg:col-span-2 space-y-8">
@@ -77,9 +67,6 @@
                 </button>
                 <div id="post-detail-content">
                 </div>
-
-                <!-- 상세 광고는 app.js의 viewDetail()이 삽입합니다 -->
-                <div id="detail-ad" class="my-8 flex justify-center overflow-hidden"></div>
             </div>
 
             <div id="page-about" class="page-content hidden bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100">
@@ -109,12 +96,9 @@
                     <h3 class="text-base font-bold text-gray-800 mt-4">2. 쿠키(Cookie) 및 제3자 광고 시스템</h3>
                     <p>본 블로그는 광고 게재 및 방문 통계 분석을 위해 다음과 같은 제3자 서비스를 이용하고 있으며, 이들 서비스는 쿠키 또는 광고 식별자를 사용하여 방문자의 본 사이트 및 다른 사이트 방문 기록을 바탕으로 맞춤형 광고를 제공하거나 이용 현황을 분석할 수 있습니다.</p>
                     <ul class="list-disc pl-5 space-y-1">
-                        <li><strong>Google AdSense (Google LLC):</strong> 맞춤형 광고 게재</li>
-                        <li><strong>Kakao AdFit (주식회사 카카오):</strong> 광고 게재 및 광고 성과 측정</li>
                         <li><strong>Monetag:</strong> 광고 게재 및 사이트 인증</li>
                         <li><strong>Google Tag Manager / Google Analytics:</strong> 방문자 통계 분석 및 태그 관리</li>
                     </ul>
-                    <p>방문자는 구글의 <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" class="text-blue-600 underline">광고 설정</a> 페이지를 방문하여 맞춤형 광고 게재를 중단할 수 있으며, 브라우저 설정을 통해 쿠키 저장을 거부하거나 삭제할 수 있습니다.</p>
 
                     <h3 class="text-base font-bold text-gray-800 mt-4">3. 개인정보 처리방침의 변경</h3>
                     <p>본 방침은 시행일로부터 적용되며, 법령 및 방침에 따른 변경내용의 추가, 삭제 및 정정이 있을 시에는 변경사항을 지체 없이 본 페이지를 통해 공지할 것입니다.</p>
@@ -138,11 +122,6 @@
                 <p class="text-sm text-gray-600 leading-relaxed">
                     生活에 유익한 전문적인 지식과 최신 정보를 쉽고 정확하게 전달해 드립니다. 궁금한 사항은 언제든 문의해 주세요.
                 </p>
-            </div>
-
-            <div class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 text-center">
-                <span class="text-[10px] text-gray-400 block mb-2">ADVERTISEMENT</span>
-                <div id="sidebar-ad" class="flex justify-center overflow-hidden"></div>
             </div>
 
             <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
@@ -201,47 +180,5 @@
 
     <script src="./posts-data.js"></script>
     <script src="./app.js"></script>
-
-    <!-- Kakao AdFit 동적 삽입 -->
-    <script>
-    (function () {
-        // 컨테이너에 AdFit 광고 1개를 삽입 (ins 뒤에 ba.min.js를 붙여야 해당 광고가 로드됨)
-        function renderAdfit(containerId, unit, width, height) {
-            var box = document.getElementById(containerId);
-            if (!box) return;
-            box.innerHTML = '';
-            var ins = document.createElement('ins');
-            ins.className = 'kakao_ad_area';
-            ins.style.display = 'none';
-            ins.setAttribute('data-ad-unit', unit);
-            ins.setAttribute('data-ad-width', String(width));
-            ins.setAttribute('data-ad-height', String(height));
-            var s = document.createElement('script');
-            s.async = true;
-            s.src = '//t1.kakaocdn.net/kas/static/ba.min.js';
-            box.appendChild(ins);
-            box.appendChild(s);
-        }
-
-        // 상단 배너: 화면 폭에 맞는 단일 광고
-        function renderTopAd() {
-            if (window.innerWidth >= 768) {
-                renderAdfit('top-ad', 'DAN-Hqq2W0vGw8kwQZQV', 728, 90);
-            } else {
-                renderAdfit('top-ad', 'DAN-AOBONxkcCHaK4yhn', 320, 100);
-            }
-        }
-
-        // 사이드바 300x250
-        function renderSidebarAd() {
-            renderAdfit('sidebar-ad', 'DAN-NiHRZWuxaxoYJkAR', 300, 250);
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            renderTopAd();
-            renderSidebarAd();
-        });
-    })();
-    </script>
 </body>
 </html>
