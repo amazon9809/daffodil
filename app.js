@@ -251,12 +251,15 @@ function injectMidAd(content) {
         <div class="my-8 text-center not-prose">
             <span class="text-[10px] text-gray-400 block mb-1">ADVERTISEMENT</span>
             <div class="flex justify-center overflow-hidden">
-                <ins class="kakao_ad_area" style="display:none;"
-                    data-ad-unit="DAN-FkPNnJnYvpHfHGjF"
-                    data-ad-width="320"
-                    data-ad-height="100"></ins>
+            <ins class="kakao_ad_area" style="display:none;"
+            data-ad-unit = "DAN-Qp3syfpkwwNTp8Sx"
+            data-ad-width = "320"
+            data-ad-height = "100"></ins>
             </div>
         </div>`;
+
+
+    
 
     // lookbehind 정규식은 구형 Safari에서 오류가 나므로 '</p>' 기준으로 직접 나눕니다.
     const parts = content.split(/<\/p>/i);
