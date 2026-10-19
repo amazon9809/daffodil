@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://www.denver703.com/sitemap.xml
