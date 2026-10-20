@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <!-- Google AdSense -->
+    <!-- Google AdSense (자동 광고 + 수동 광고 단위 공용 스크립트, 한 번만 포함) -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7903435708794735"
          crossorigin="anonymous"></script>
     <!-- End Google AdSense -->
@@ -16,7 +16,7 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5N4CRMMZ');</script>
     <!-- End Google Tag Manager -->
-    <script src="https://5gvci.com/act/files/tag.min.js?z=12068091" data-cfasync="false" async></script>
+
     <meta name="naver-site-verification" content="5ae7811b28c3805ca5da66830d054d2576faf428" />
 
     <title>건강정보-생활정보</title>
@@ -64,6 +64,17 @@
 
                 <div id="posts-container" class="grid grid-cols-2 gap-4 md:gap-6">
                 </div>
+
+                <!-- 광고: 홈 목록 하단 (디스플레이 광고) -->
+                <div class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-7903435708794735"
+                         data-ad-slot="0000000000"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                </div>
             </div>
 
             <div id="page-detail" class="page-content hidden bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100">
@@ -71,6 +82,18 @@
                     <i class="fa-solid fa-arrow-left"></i> 목록으로 돌아가기
                 </button>
                 <div id="post-detail-content">
+                </div>
+
+                <!-- 광고: 상세 페이지 하단 (인아티클 광고)
+                     숨겨진(hidden) 영역에서 바로 push하면 너비 0 오류가 나므로,
+                     아래 스크립트가 상세 페이지가 처음 보일 때 한 번만 로드합니다. -->
+                <div class="mt-8">
+                    <ins id="detail-ad" class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="ca-pub-7903435708794735"
+                         data-ad-slot="0000000000"></ins>
                 </div>
             </div>
 
@@ -102,7 +125,6 @@
                     <p>본 블로그는 광고 게재 및 방문 통계 분석을 위해 다음과 같은 제3자 서비스를 이용하고 있으며, 이들 서비스는 쿠키 또는 광고 식별자를 사용하여 방문자의 본 사이트 및 다른 사이트 방문 기록을 바탕으로 맞춤형 광고를 제공하거나 이용 현황을 분석할 수 있습니다.</p>
                     <ul class="list-disc pl-5 space-y-1">
                         <li><strong>Google AdSense:</strong> 광고 게재 (Google 및 제3자 공급업체는 쿠키를 사용하여 방문자의 본 사이트 및 다른 사이트 방문 기록을 바탕으로 광고를 게재합니다. 방문자는 <a href="https://adssettings.google.com" target="_blank" rel="noopener" class="text-blue-600 underline">Google 광고 설정</a>에서 맞춤 광고를 해제할 수 있습니다.)</li>
-                        <li><strong>Monetag:</strong> 광고 게재 및 사이트 인증</li>
                         <li><strong>Google Tag Manager / Google Analytics:</strong> 방문자 통계 분석 및 태그 관리</li>
                     </ul>
 
@@ -155,6 +177,17 @@
                 </p>
             </div>
 
+            <!-- 광고: 사이드바 (디스플레이 광고) -->
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-7903435708794735"
+                     data-ad-slot="0000000000"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+
         </aside>
     </main>
 
@@ -186,5 +219,26 @@
 
     <script src="./posts-data.js"></script>
     <script src="./app.js"></script>
+
+    <!-- 상세 페이지 광고: 페이지가 처음 표시될 때 한 번만 로드 -->
+    <script>
+    (function () {
+        var detail = document.getElementById('page-detail');
+        var ad = document.getElementById('detail-ad');
+        if (!detail || !ad) return;
+        var loaded = false;
+
+        function loadAd() {
+            if (loaded || detail.classList.contains('hidden')) return;
+            loaded = true;
+            try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
+            observer.disconnect();
+        }
+
+        var observer = new MutationObserver(loadAd);
+        observer.observe(detail, { attributes: true, attributeFilter: ['class'] });
+        loadAd();
+    })();
+    </script>
 </body>
 </html>
