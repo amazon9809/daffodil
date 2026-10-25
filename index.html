@@ -47,9 +47,9 @@
 
             <nav class="flex flex-wrap justify-center gap-1 md:gap-2">
                 <button onclick="goHome()" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-blue-600 bg-blue-50 transition">홈</button>
-                <button onclick="filterCategory('tech')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">생활정보</button>
-                <button onclick="filterCategory('life')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">건강정보</button>
-                <button onclick="filterCategory('finance')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">경제정보</button>
+                <button onclick="filterCategory('tech')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">기술·IT</button>
+                <button onclick="filterCategory('life')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">생활·건강정보</button>
+                <button onclick="filterCategory('finance')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">경제·금융정보</button>
                 <button onclick="showPage('about')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">블로그 소개</button>
                 <button onclick="showPage('privacy')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition">개인정보처리방침</button>
             </nav>
@@ -157,15 +157,15 @@
                 <h3 class="font-bold text-gray-900 text-base mb-4 border-l-4 border-blue-600 pl-2">카테고리 정보</h3>
                 <div class="space-y-2">
                     <button onclick="filterCategory('tech')" class="w-full flex justify-between items-center text-sm text-gray-600 hover:text-blue-600 py-1.5 border-b border-gray-50 text-left">
-                        <span><i class="fa-solid fa-laptop-code text-blue-500 mr-2"></i> 생활정보</span>
+                        <span><i class="fa-solid fa-laptop-code text-blue-500 mr-2"></i> 기술·IT</span>
                         <span id="count-tech" class="bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full text-[10px] font-semibold">0</span>
                     </button>
                     <button onclick="filterCategory('life')" class="w-full flex justify-between items-center text-sm text-gray-600 hover:text-blue-600 py-1.5 border-b border-gray-50 text-left">
-                        <span><i class="fa-solid fa-heart text-red-400 mr-2"></i> 건강정보</span>
+                        <span><i class="fa-solid fa-heart text-red-400 mr-2"></i> 생활·건강정보</span>
                         <span id="count-life" class="bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full text-[10px] font-semibold">0</span>
                     </button>
                     <button onclick="filterCategory('finance')" class="w-full flex justify-between items-center text-sm text-gray-600 hover:text-blue-600 py-1.5 border-b border-gray-50 text-left">
-                        <span><i class="fa-solid fa-coins text-yellow-500 mr-2"></i> 경제정보</span>
+                        <span><i class="fa-solid fa-coins text-yellow-500 mr-2"></i> 경제·금융정보</span>
                         <span id="count-finance" class="bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full text-[10px] font-semibold">0</span>
                     </button>
                 </div>
