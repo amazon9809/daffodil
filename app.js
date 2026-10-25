@@ -81,7 +81,7 @@
     box.innerHTML = items.slice(0, shown).map(cardHtml).join('');
     box.querySelectorAll('article').forEach(function (card) {
       card.addEventListener('click', function () {
-        openPost(Number(card.getAttribute('data-id')), true);
+        location.href = 'post/' + card.getAttribute('data-id') + '.html';
       });
     });
     updateMore(Math.min(shown, items.length), items.length);
