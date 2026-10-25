@@ -1,0 +1,122 @@
+/* 사용법:  node build.js
+ * posts-data.js 의 blogPosts 를 읽어서 dist/ 폴더에 사이트 전체를 생성합니다.
+ *  - dist/index.html, app.js, posts-data.js
+ *  - dist/post/<id>.html   (글마다 별도 페이지: 구글 색인용)
+ *  - dist/sitemap.xml, dist/robots.txt
+ */
+const fs = require('fs');
+const path = require('path');
+const vm = require('vm');
+
+const SITE_URL = 'https://denver703.com';   // ← 실제 도메인 (끝에 / 없이)
+const SITE_NAME = 'Tech&Life';
+const ADSENSE_CLIENT = 'ca-pub-7903435708794735';
+const ADSENSE_SLOT = '0000000000';          // ← 애드센스 광고 단위 ID로 교체
+const GTM_ID = 'GTM-5N4CRMMZ';
+const GOOGLE_VERIFY = 'bxykyrvW570LVGUY8ZcUnPP1yBbkwfh5UWvmjvEORA0';
+const NAVER_VERIFY = '5ae7811b28c3805ca5da66830d054d2576faf428';
+
+const ROOT = __dirname;
+const DIST = path.join(ROOT, 'dist');
+
+// ---- 데이터 읽기 ----
+const code = fs.readFileSync(path.join(ROOT, 'posts-data.js'), 'utf8');
+const posts = vm.runInNewContext(code + '\n;blogPosts');
+if (!Array.isArray(posts) || !posts.length) throw new Error('blogPosts 를 읽지 못했습니다.');
+
+const CAT = {
+  tech: '기술·IT',
+  life: '생활·건강정보',
+  finance: '경제·금융정보',
+};
+const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const sorted = posts.slice().sort((a, b) => (a.date === b.date ? b.id - a.id : a.date < b.date ? 1 : -1));
+
+// 글 본문에서 카카오 애드핏 같은 동적 스크립트 광고 빈 박스 제거
+const cleanContent = (html) => html.replace(/<div class="my-8 p-4 bg-gray-50[^>]*>\s*<div[^>]*>Advertisement<\/div>[\s\S]*?<\/ins>\s*<\/div>/g, '');
+
+const headCommon = (title, desc, url, extra = '') => `
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}" crossorigin="anonymous"></script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');</script>
+<meta name="naver-site-verification" content="${NAVER_VERIFY}" />
+<meta name="google-site-verification" content="${GOOGLE_VERIFY}" />
+<title>${esc(title)}</title>
+<meta name="description" content="${esc(desc)}">
+<link rel="canonical" href="${url}">
+<meta property="og:type" content="article"><meta property="og:title" content="${esc(title)}">
+<meta property="og:description" content="${esc(desc)}"><meta property="og:url" content="${url}">
+<meta property="og:site_name" content="${SITE_NAME}">
+${extra}
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">`;
+
+const postCss = `
+body{font-family:'Noto Sans KR',sans-serif}
+.post-body{color:#374151;line-height:1.8;font-size:15px}.post-body p{margin-bottom:1rem}
+.post-body h2{font-size:1.4rem;font-weight:800;color:#111827;margin:2rem 0 1rem}
+.post-body h3{font-size:1.15rem;font-weight:700;color:#111827;margin:1.6rem 0 .6rem}
+.post-body h4{font-size:1rem;font-weight:600;color:#1f2937;margin:1.1rem 0 .4rem}
+.post-body ul{list-style:disc;padding-left:1.4rem;margin-bottom:1rem}.post-body ol{list-style:decimal;padding-left:1.4rem;margin-bottom:1rem}
+.post-body li{margin:.3rem 0}.post-body img{max-width:100%;height:auto;border-radius:.5rem}
+.post-body table{width:100%;border-collapse:collapse;font-size:.875rem}
+.post-body th,.post-body td{border:1px solid #e5e7eb;padding:.5rem .75rem;text-align:left;vertical-align:top}
+.post-body blockquote{border-left:4px solid #9ca3af;padding-left:1rem;color:#4b5563;margin:1rem 0}
+.post-body hr{margin:1.5rem 0;border-color:#e5e7eb}`;
+
+function postPage(p) {
+  const url = `${SITE_URL}/post/${p.id}.html`;
+  const label = (p.categoryKo || CAT[p.category] || '').trim();
+  const related = sorted.filter((x) => x.category === p.category && x.id !== p.id).slice(0, 4);
+  const ld = JSON.stringify({
+    '@context': 'https://schema.org', '@type': 'Article', headline: p.title, description: p.summary,
+    datePublished: p.date, author: { '@type': 'Person', name: p.author || '정보 에디터' },
+    mainEntityOfPage: url, publisher: { '@type': 'Organization', name: SITE_NAME },
+  });
+  return `<!DOCTYPE html>
+<html lang="ko"><head>${headCommon(`${p.title} - ${SITE_NAME}`, p.summary, url, `<script type="application/ld+json">${ld}</script>`)}
+<style>${postCss}</style></head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_ID}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<header class="bg-white shadow-sm sticky top-0 z-50"><div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+<a href="../index.html" class="text-xl font-extrabold text-blue-600 flex items-center gap-2"><i class="fa-solid fa-book-open"></i> ${SITE_NAME}</a>
+<a href="../index.html" class="text-sm text-gray-600 hover:text-blue-600">전체 글 보기</a></div></header>
+<main class="max-w-4xl mx-auto w-full px-4 py-8 flex-grow">
+<article class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100">
+<span class="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-blue-50 text-blue-600">${esc(label)}</span>
+<h1 class="mt-3 text-2xl md:text-3xl font-extrabold text-gray-900 leading-tight">${esc(p.title)}</h1>
+<div class="mt-2 text-xs text-gray-400 flex flex-wrap gap-x-3"><time datetime="${esc(p.date)}">${esc(p.date)}</time><span>${esc(p.author || '')}</span><span>${esc(p.readTime || '')}</span></div>
+<div class="post-body mt-6">${cleanContent(p.content)}</div>
+<div class="mt-8"><ins class="adsbygoogle" style="display:block;text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="${ADSENSE_CLIENT}" data-ad-slot="${ADSENSE_SLOT}"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+</article>
+${related.length ? `<section class="mt-8"><h2 class="text-lg font-bold text-gray-900 border-l-4 border-blue-600 pl-3 mb-4">관련 글</h2><ul class="space-y-2">${related.map((r) => `<li><a class="text-blue-600 hover:underline text-sm" href="${r.id}.html">${esc(r.title)}</a></li>`).join('')}</ul></section>` : ''}
+</main>
+<footer class="bg-gray-900 text-gray-400 py-8 mt-12 text-center text-xs">
+<p><a class="hover:text-white" href="../index.html">홈</a> · <a class="hover:text-white" href="../privacy.html">개인정보처리방침</a></p>
+<p class="mt-3 text-gray-600">&copy; 2026 ${SITE_NAME} Blog. All Rights Reserved.</p></footer>
+</body></html>`;
+}
+
+// ---- 출력 ----
+fs.rmSync(DIST, { recursive: true, force: true });
+fs.mkdirSync(path.join(DIST, 'post'), { recursive: true });
+['index.html', 'app.js', 'posts-data.js'].forEach((f) => fs.copyFileSync(path.join(ROOT, f), path.join(DIST, f)));
+sorted.forEach((p) => fs.writeFileSync(path.join(DIST, 'post', `${p.id}.html`), postPage(p)));
+
+// 개인정보처리방침 단독 페이지 (애드센스 심사 시 직접 링크용)
+const idx = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
+const m = idx.match(/<div id="page-privacy"[\s\S]*?<\/div>\s*<\/div>/);
+fs.writeFileSync(path.join(DIST, 'privacy.html'), `<!DOCTYPE html><html lang="ko"><head>${headCommon('개인정보처리방침 - ' + SITE_NAME, '개인정보처리방침', SITE_URL + '/privacy.html')}<style>body{font-family:'Noto Sans KR',sans-serif}</style></head><body class="bg-gray-50"><main class="max-w-3xl mx-auto px-4 py-10"><a href="index.html" class="text-sm text-blue-600">← 홈으로</a><div class="mt-4 bg-white rounded-2xl p-8 shadow-sm">${m ? m[0].replace('class="page-content hidden', 'class="') : ''}</div></main></body></html>`);
+
+const urls = [`${SITE_URL}/`, `${SITE_URL}/privacy.html`, ...sorted.map((p) => `${SITE_URL}/post/${p.id}.html`)];
+const lastmod = Object.fromEntries(sorted.map((p) => [`${SITE_URL}/post/${p.id}.html`, p.date]));
+fs.writeFileSync(path.join(DIST, 'sitemap.xml'),
+  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+  urls.map((u) => `  <url><loc>${u}</loc>${lastmod[u] ? `<lastmod>${lastmod[u]}</lastmod>` : ''}</url>`).join('\n') + `\n</urlset>\n`);
+fs.writeFileSync(path.join(DIST, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
+
+console.log(`완료: 글 ${sorted.length}개 → dist/ 폴더 (sitemap.xml, robots.txt 포함)`);
