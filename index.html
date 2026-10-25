@@ -20,7 +20,6 @@
     <meta name="naver-site-verification" content="5ae7811b28c3805ca5da66830d054d2576faf428" />
     <meta name="google-site-verification" content="bxykyrvW570LVGUY8ZcUnPP1yBbkwfh5UWvmjvEORA0" />
 
-
     <title>건강정보-생활정보</title>
     <!-- 운영 환경에서는 Tailwind를 빌드한 CSS 파일로 교체하는 것을 권장합니다 -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -42,7 +41,7 @@
 
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
-            <a href="#" onclick="goHome()" class="text-2xl font-extrabold text-blue-600 tracking-tight flex items-center gap-2">
+            <a href="#" onclick="goHome(); return false;" class="text-2xl font-extrabold text-blue-600 tracking-tight flex items-center gap-2">
                 <i class="fa-solid fa-book-open"></i> Tech&Life <span class="text-gray-500 text-sm font-normal">생활정보 블로그</span>
             </a>
 
@@ -204,9 +203,9 @@
             <div>
                 <span class="text-white text-sm font-semibold block mb-3">바로가기 링크</span>
                 <ul class="text-xs space-y-2">
-                    <li><a href="#" onclick="goHome()" class="hover:text-white transition">홈 화면</a></li>
-                    <li><a href="#" onclick="showPage('about')" class="hover:text-white transition">블로그 소개</a></li>
-                    <li><a href="#" onclick="showPage('privacy')" class="hover:text-white transition">개인정보처리방침 (필수)</a></li>
+                    <li><a href="#" onclick="goHome(); return false;" class="hover:text-white transition">홈 화면</a></li>
+                    <li><a href="#" onclick="showPage('about'); return false;" class="hover:text-white transition">블로그 소개</a></li>
+                    <li><a href="#" onclick="showPage('privacy'); return false;" class="hover:text-white transition">개인정보처리방침 (필수)</a></li>
                 </ul>
             </div>
         </div>
